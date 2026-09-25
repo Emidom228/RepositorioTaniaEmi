@@ -16,9 +16,9 @@
 *Circuito en la vida real*
 ![Potenciometro](../img/potenciometro.jpeg)
 
- *Tabla*
+*Tabla*
 | Punto | Ángulo de referencia | Lectura ADC | Ángulo calculado | Error |
-|---|---:|---:|---:|---:|
+| --- | --- | --- | --- | --- |
 | Mínimo | 0° | 0 | 0.0° | 0.0° |
 | 25% | 67.5° | 1061 | 70.0° | 2.5° |
 | 50% | 135° | 2078 | 137.0° | 2.0° |
