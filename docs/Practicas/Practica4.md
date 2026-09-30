@@ -14,7 +14,7 @@
 Se conecto el potenciometro al pin 34 del ESP32.  
 *Simulacion*
 <div style="display: flex; align-items: center; gap: 20px;">
-  <img src="https://emidom228.github.io/RepositorioTaniaEmi/docs/img/esp32.png" width="300" alt="Simulación del ESP32">
+  <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/esp32.png" width="300" alt="Simulación del ESP32">
   <p><i>Figura 1. Se conectó el potenciómetro al pin 34 del ESP32.</i></p>
 </div>
 
