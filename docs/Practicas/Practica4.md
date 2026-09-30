@@ -9,9 +9,14 @@
 - Potenciometro
 - Sensor ultrasónico
 
-### Potenciometro y ESP32
-
+### ESP32-Potenciometro
+Se conecto el potenciometro al pin 34 del ESP32.
 *Simulacion*
+<figure>
+  <img src="../img/esp32.png" width="300" alt="Descripción">
+  <figcaption>Figura 1. Pie de imagen.</figcaption>
+</figure>
+
 ![Simulación](../img/esp32.png)
 *Circuito en la vida real*
 ![Potenciometro](../img/potenciometro.jpeg)
