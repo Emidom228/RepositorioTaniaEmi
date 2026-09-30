@@ -3,21 +3,19 @@
 **Materia:** Introducción a la Mecatrónica  
 **Tema:** Sensores 101: ADC & Acondicionamiento
 
-### Lista de Materiales
+### **Lista de Materiales**
 - ESP32
 - Jumpers
 - Potenciometro
 - Sensor ultrasónico
+- Protoboard
 
-### ESP32-Potenciometro
+### **ESP32 - Potenciometro**
 Se conecto el potenciometro al pin 34 del ESP32.
 *Simulacion*
-<figure>
-  <img src="../img/esp32.png" width="300" alt="Descripción">
-  <figcaption>Figura 1. Pie de imagen.</figcaption>
-</figure>
+<img src="../img/esp32.png" width="300" alt="Simulación del ESP32">
 
-![Simulación](../img/esp32.png)
+![Simulación del ESP32](../img/esp32.png)
 *Circuito en la vida real*
 ![Potenciometro](../img/potenciometro.jpeg)
 
