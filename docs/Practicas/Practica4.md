@@ -21,12 +21,12 @@ Se conecto el potenciometro al pin 34 del ESP32.
 
 *Montaje en protoboard*
 <div style="display: flex; align-items: center; gap: 20px;">
-  <img src="../img/potenciometro.jpeg" width="75%" alt="Simulación del ESP32">
+  <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/potenciometro.jpeg" width="75%" alt="Simulación del ESP32">
   <p><i>Se replicó la simulación con la ayuda de un protoboard.</i></p>
-</div>  
-![Potenciometro](../img/potenciometro.jpeg)
+</div>   
 
 *Tabla*
+
 | Punto | Ángulo de referencia | Lectura ADC | Ángulo calculado | Error |
 | --- | --- | --- | --- | --- |
 | Mínimo | 0° | 0 | 0.0° | 0.0° |
