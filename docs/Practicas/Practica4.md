@@ -12,14 +12,18 @@
 
 ### **ESP32 - Potenciometro**
 Se conecto el potenciometro al pin 34 del ESP32.  
-*Simulacion*
-<div style="display: flex; align-items: center; gap: 20px;">
-  <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/esp32.png" width="300" alt="Simulación del ESP32">
-  <p><i>Figura 1. Se conectó el potenciómetro al pin 34 del ESP32.</i></p>
-</div>
 
-![Simulación del ESP32](../img/esp32.png)
-*Circuito en la vida real*
+*Simulacion*  
+<div style="display: flex; align-items: center; gap: 20px;">
+  <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/esp32.png" width="75%" alt="Simulación del ESP32">
+  <p><i>La simulación se realizo en wowki, que nos ayudo a conocer los datos para la tabla.</i></p>
+</div>  
+
+*Montaje en protoboard*
+<div style="display: flex; align-items: center; gap: 20px;">
+  <img src="../img/potenciometro.jpeg" width="75%" alt="Simulación del ESP32">
+  <p><i>Se replicó la simulación con la ayuda de un protoboard.</i></p>
+</div>  
 ![Potenciometro](../img/potenciometro.jpeg)
 
 *Tabla*
