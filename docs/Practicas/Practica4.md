@@ -20,7 +20,7 @@ Leer y escalar la señal de un potenciómetro (porcentaje y ángulo) y medir dis
 ### *Simulación*  
 <div style="display: flex; align-items: center; gap: 20px;">
   <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/esp32.png" width="75%" alt="Simulación del ESP32">
-  <p><i>La simulación se realizo en Wokwi, con el potenciómetro conectado al pin 34 del ESP32. Sirvio para obtener los datos de la tabla.</i></p>
+  <p><i>La simulación se realizó en Wokwi, con el potenciómetro conectado al pin 34 del ESP32. Sirvió para obtener los datos de la tabla.</i></p>
 </div>  
 
 ### *Montaje en protoboard*
@@ -48,19 +48,22 @@ Registramos 5 puntos:
   <p><i>Código utilizado tanto en la simulación como en el ESP32 físico conectado a la computadora.</i></p>
 </div>   
 
-### **ESP32 - Sensor ultrasónico**  
-*Simulación*
+## **ESP32 - Sensor ultrasónico**  
+### *Simulación*
 <div style="display: flex; align-items: center; gap: 20px;">
   <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/ultrasonico.png" width="75%" alt="Simulación ultrasónico">
   <p><i>Simulación en Wokwi del sensor HC-SR04 y el LED conectados al ESP32. Con el código se obtuvieron los valores de la tabla.</i></p>
 </div>   
 
-*Montaje en Protoboard*
+### *Montaje en Protoboard*
+<img src="https://emidom228.github.io/RepositorioTaniaEmi/img/montaje.jpeg" width="75%" alt="Simulación ultrasónico">
+  <p><i>Simulación en Wokwi del sensor HC-SR04 y el LED conectados al ESP32. Con el código se obtuvieron los valores de la tabla.</i></p>
+</div>   
 
-**Procedimiento:** Conectamos el sensor ultrasónico con TRIG al pin 5, ECHO al pin 18 y un LED al pin 23 del ESP32.
-El sensor mide el tiempo (eco en µs)  que tarda el sonido en ir y regresar, y la distancia se calcula como eco × 0.0343/2. Finalmente el LED se enciende unicamente cuando la distancia es menor a 30cm.  
-si
-*Tabla*
+**Procedimiento:** Se conectó el sensor ultrasónico con TRIG al pin 5, ECHO al pin 18 y un LED al pin 23 del ESP32.
+El sensor mide el tiempo (eco en µs)  que tarda el sonido en ir y regresar, y la distancia se calcula como eco × 0.0343/2. Finalmente el LED se enciende únicamente cuando la distancia es menor a 30cm.  
+
+### *Tabla*
 
 | Punto | Distancia de referencia (cm) | Eco (µs) | Distancia calculada(cm) | Error (cm) | LED |
 | --- | --- | --- | --- | --- | --- |
@@ -70,8 +73,12 @@ si
 | 75% | 34 | 1999 | 34.28 | 0.28 | Apagado |
 | Máximo | 42 | 2467 | 42.31 | 0.31 | Apagado |
 
-*Código*
+### *Código*
 <div style="display: flex; align-items: center; gap: 20px;">
   <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/cod_sensor.png" width="75%" alt="codigo ultrásonico">
   <p><i>Código utilizado en la simulación y montaje físico del sensor ultrasónico.</i></p>
 </div>   
+
+### *Conclusión*
+
+
