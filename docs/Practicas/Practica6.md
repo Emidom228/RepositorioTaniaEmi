@@ -14,13 +14,16 @@
 
 ### Mecanismos 
 <div style="display: flex; gap: 10px;">
-  <div style="flex: 1;">
+  <div style="flex: 1; text-align: center;">
     <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/bevel.jpeg" alt="Descripción 1" width="100%">
+    <p>Bevel</p>
   </div>
-  <div style="flex: 1;">
+  <div style="flex: 1; text-align: center;">
     <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/crown.jpeg" alt="Descripción 2" width="100%">
+    <p>Crown</p>
   </div>
 </div>
+
 
 
 ### Ejercicios 
