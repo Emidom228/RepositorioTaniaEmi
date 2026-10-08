@@ -83,22 +83,19 @@
 
 ## Ejercicios 
  ### **Ejercicio 1: Tren simple**
+
 Un piñón de 10 dientes mueve un engrane de 40 dientes. El motor entrega 300 rpm y 0.1 N·m. ¿A qué velocidad y con qué par gira la salida? (Ignorar pérdidas por fricción.)  
 
-**datos**  
+**Datos**  
 - Dientes de entrada (piñon): 10  
 - Dientes de salida (engrane): 40  
 - Velocidad de entrada: 30 rpm
 - Par de entrada: 0.1 N·m
 
-*formúla*
+**Solución**
 $$
-i=\frac{z_{entrada}}{z_{salida}}
+i=\frac{40}{10}=4
 $$
-*solución*
-    $$
-    i=\frac{40}{10}=4
-    $$
 
 $$
 f=\frac{1}{T}=\frac{1.44}{(R_A+2R_B)C}
