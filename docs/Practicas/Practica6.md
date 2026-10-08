@@ -24,6 +24,61 @@
   </div>
 </div>
 
+<div style="display: flex; gap: 10px;">
+  <div style="flex: 1; text-align: center;">
+    <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/cycloidal.jpeg" alt="Descripción 1" width="100%">
+    <p>Cycloidal drive</p>
+  </div>
+  <div style="flex: 1; text-align: center;">
+    <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/differential.jpeg" alt="Descripción 2" width="100%">
+    <p>Differential </p>
+  </div>
+</div>
+
+<div style="display: flex; gap: 10px;">
+  <div style="flex: 1; text-align: center;">
+    <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/geneva.jpeg" alt="Descripción 1" width="100%">
+    <p>Geneva</p>
+  </div>
+  <div style="flex: 1; text-align: center;">
+    <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/intermittent.jpeg" alt="Descripción 2" width="100%">
+    <p>Intermittent</p>
+  </div>
+</div>
+
+<div style="display: flex; gap: 10px;">
+  <div style="flex: 1; text-align: center;">
+    <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/joint.jpeg" alt="Descripción 1" width="100%">
+    <p>Universal joint/p>
+  </div>
+  <div style="flex: 1; text-align: center;">
+    <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/planetary.jpeg" alt="Descripción 2" width="100%">
+    <p>Planetary gear</p>
+  </div>
+</div>
+
+<div style="display: flex; gap: 10px;">
+  <div style="flex: 1; text-align: center;">
+    <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/rack.jpeg" alt="Descripción 1" width="100%">
+    <p>Rack & pinion</p>
+  </div>
+  <div style="flex: 1; text-align: center;">
+    <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/shutter.jpeg" alt="Descripción 2" width="100%">
+    <p>Shutter</p>
+  </div>
+</div>
+
+<div style="display: flex; gap: 10px;">
+  <div style="flex: 1; text-align: center;">
+    <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/spiral.jpeg" alt="Descripción 1" width="100%">
+    <p>Spiral</p>
+  </div>
+  <div style="flex: 1; text-align: center;">
+    <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/crown.jpeg" alt="Descripción 2" width="100%">
+    <p>Worm & Wormwheel</p>
+  </div>
+</div>
+
 
 
 ### Ejercicios 
