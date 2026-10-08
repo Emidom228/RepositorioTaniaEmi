@@ -3,7 +3,7 @@
 **Materia:** Introducción a la Mecatrónica  
 **Tema:** Mecanismos 101
 
-### Ficha de estación
+## Ficha de estación
 | Estación | ¿Qué transforma? (vel↔par, rot↔trasl, cont↔inter, cambio de eje) | Relación estimada (cuenta de dientes o vueltas) | Reversible o autobloqueante | ¿Dónde lo has visto en la vida real? | ¿Serviría en el proyecto del carro? |
 | --- | --- | --- | --- | --- | --- |
 | Diferencial *(Diferential)* | vel↔par, porque se distribuye la fuerza y movimiento ente los ejes | 1:1 (el piñon empuja la caja diferencial, y esta reparte la fuerza a las salidas, que tienen variación dinámica) | Reversible | Carros | Sí, para que las ruedas giren a diferente velocidad en las curvas |
@@ -12,7 +12,7 @@
 | Obturador  *(shutter)*| Contacto intermitente, bloquea el paso de algo de forma periódica | 1:1 | Reversible | Proyectores y cámaras | Para controlar la visión de un sensor | 
 | Piñon y cremallera *(Rack & Pinion)* | rot↔trasl, es un movimiento lineal | 2:1 | Reversible | Puertas corredizas automáticas | No funcionaria |
 
-### Mecanismos 
+## Mecanismos 
 <div style="display: flex; gap: 10px;">
   <div style="flex: 1; text-align: center;">
     <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/bevel.jpeg" alt="Descripción 1" width="100%">
@@ -81,16 +81,25 @@
 
 
 
-### Ejercicios 
-
-1. **Tren simple:**
+## Ejercicios 
+ ### **Ejercicio 1: Tren simple**
 Un piñón de 10 dientes mueve un engrane de 40 dientes. El motor entrega 300 rpm y 0.1 N·m. ¿A qué velocidad y con qué par gira la salida? (Ignorar pérdidas por fricción.)  
-*DATOS*  
-    Dientes de entrada (piñon): 10  
-    Dientes de salida (engrane): 40  
 
-*FORMULA*
+**datos**  
+- Dientes de entrada (piñon): 10  
+- Dientes de salida (engrane): 40  
+- Velocidad de entrada: 30 rpm
+- Par de entrada: 0.1 N·m
+
+*formúla*
+$$
+i=\frac{z_{entrada}}{z_{salida}}
+$$
+*solución*
     $$
-    i=\frac{z_{entrada}}{z_{salida}}
+    i=\frac{40}{10}=4
     $$
 
+$$
+f=\frac{1}{T}=\frac{1.44}{(R_A+2R_B)C}
+$$
