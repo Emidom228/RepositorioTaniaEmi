@@ -91,6 +91,6 @@ Un piñón de 10 dientes mueve un engrane de 40 dientes. El motor entrega 300 rp
 
 *FORMULA*
     $$
-    i=\fracc{z_{entrada}}{z_{salida}}
+    i=\frac{z_{entrada}}{z_{salida}}
     $$
 
