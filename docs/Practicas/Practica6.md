@@ -94,30 +94,12 @@ Un piñón de 10 dientes mueve un engrane de 40 dientes. El motor entrega 300 rp
 
 **Solución**
 
-<div style="display: flex; align-items: center; gap: 40px;">
-
 $$
 i=\frac{40}{10}=4
 $$
 
-<div style="border-left: 3px solid #888; padding-left: 15px;">
-
-**Relación de transmisión**
-
-*i* = relación de transmisión  
-40 = dientes de entrada  
-10 = dientes de salida
-
-</div>
-
-</div>
-
-$$
-i=\frac{40}{10}=4
-$$
-
-!!! "Relación de transmisión"
-donde:**i** = relación de transmisión  
+??? info "Relación de transmisión"
+    **i** = relación de transmisión  
     **40** = dientes del engrane de entrada  
     **10** = dientes del engrane de salida
 
@@ -125,11 +107,14 @@ $$
 n-salida=\frac{300}{4}=75rpm
 $$
 
-!!! warning "Velocidad de salida"
-donde:
-    **300** = dientes del engrane de entrada  
-    **4** = dientes del engrane de salida
+??? "Velocidad de salida"
+    **300** = velocidad de entrada  
+    **4** = i
 
 $$
-f=\frac{1}{T}=\frac{1.44}{(R_A+2R_B)C}
+t_salida={0.1}{4}=0.4
 $$
+
+??? "Par de salida"
+    
+
