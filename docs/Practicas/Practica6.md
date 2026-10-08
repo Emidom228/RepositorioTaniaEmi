@@ -120,10 +120,10 @@ $$
 **Resultado**
 La velocidad es de ***75rpm*** y gira a un par de ***0.4N·m***
     
-### **Ejercicio 2: Tren compuesto**
+### **Ejercicio 2: Tren compuesto**    
  Dos etapas en serie: 12→36 dientes, seguida de 10→40 dientes. ¿Cuál es la relación total? Si la entrada gira a 960 rpm, ¿a qué velocidad gira la salida final
 
-**Datos**
+**Datos**  
 - Etapa 1: 12→36 dientes
 - Etapa 2: 10→40 dientes
 - Velocidad de entrada: 960rpm
@@ -151,6 +151,7 @@ $$
 **Velocidad de salida**
 
 **Resultado:** La relación total es de ***12*** y la salida final gira a ***80rpm***
+
 
 
 
