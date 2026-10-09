@@ -25,7 +25,7 @@
 ### Procedimiento
  
  **Código**
-  <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/código_on.JPG" alt="Descripción 1" width="100%">
+  <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/codigo_on.JPG" alt="Descripción 1" width="100%">
     <p>Código en IDE Arduino, probando el comando ON en el monitor serial.</p>
 
 ![codigo OFF](codigo_off.JPG)
