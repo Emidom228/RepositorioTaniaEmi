@@ -1,7 +1,7 @@
 # Reporte de Práctica 2: MCU 101:ESP32  
 **Institución:** Universidad Iberoamericana Puebla  
 **Materia:** Introducción a la Mecatrónica  
-**Tema: ESP32:** Salida, Entrada y Antirrebote    
+**Tema:** ESP32: Salida, Entrada y Antirrebote    
 
 ### Materiales
 - (1×) ESP32 DevKit V1 (WROOM-32) 
