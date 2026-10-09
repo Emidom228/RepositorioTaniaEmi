@@ -129,6 +129,7 @@ La velocidad es de ***75rpm*** y gira a un par de ***0.4N·m***
 - Velocidad de entrada: 960rpm
 
 **Solución**
+*Relación de transmisión*
 
 $$
 i_1=\frac{36}{12}=3
@@ -142,16 +143,58 @@ $$
 i_{total}=3*4=12
 $$
 
-**Relación de transmisión**
+**Velocidad de salida**
 
 $$
 n_{salida}=\frac{960}{12}= 80rpm
 $$
 
-**Velocidad de salida**
 
 **Resultado:** La relación total es de ***12*** y la salida final gira a ***80rpm***
 
+### **Ejercicio 3:Sinfín**
+ Un sinfín de 2 hilos mueve una corona de 40 dientes. (En un sinfín, Z1 es el número de hilos.) ¿Cuál es la relación de transmisión? ¿Cuántas vueltas del sinfín se necesitan para una vuelta de la corona?
+ 
+ **Datos**
+ - Sinfin: 2 hilos
+ - Corona: 40 dientes 
 
+ **Solución**
 
+$$
+i_1=\frac{40}{2}=20
+$$
 
+**Respuesta:** La relación es de ***20:1*** y se necesitan ***20*** vueltas del sinfin para que la corona de una vuelta 
+
+### **Ejercicio 4: Cruz de Ginebra**  
+Contar las ranuras de la cruz del laboratorio y calcular: grados que avanza por cada paso, y vueltas completas del impulsor necesarias para una vuelta completa de la cruz.
+
+**Datos**
+- Número de ranuras: 6
+
+**Solución**
+
+$$
+grados por paso=\frac{360}{6}=60°
+$$
+
+**Resultado:** La cruz avanza ***60°*** cada vez que el impulsor empuja; además se necesitan ***6*** vueltas del impulsor para que la cruz de una vuelta completa.
+
+### **Ejercicio 5: Velocidad del carro.**
+ El motor TT tiene reducción interna 1:48 y, a 6 V, la rueda gira aproximadamente 200 rpm sin carga. Con ruedas de 65 mm de diámetro, usando: $v= π*D*\frac{rpm}{60}$.
+ ¿Cuál es la velocidad máxima teórica del carro en m/s? ¿Por qué en el piso real será menor que ese valor teórico?
+
+ **Datos**
+ - Reducción interna: 1:48
+ - Rueda a 6V gira: 200rpm sin carga
+ - Diamentro de rueda: 65mm
+
+**Solución**
+$$
+v= π*0.065*\frac{200}{60}= 0.68 m/s (aproximadamente)
+$$.
+
+**Resultado:** La velocidad máxima teórica es ***≈ 0.68 m/s.***. En el piso real sera menor por la fricción, el peso del carro y las perdidas mecánicas.
+
+### **Ejercicio 6: **
