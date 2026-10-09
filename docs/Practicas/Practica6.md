@@ -128,7 +128,7 @@ La velocidad es de ***75rpm*** y gira a un par de ***0.4N·m***
 - Etapa 2: 10→40 dientes
 - Velocidad de entrada: 960rpm
 
-**Solución**
+ **Solución**  
 *Relación de transmisión*
 
 $$
@@ -197,4 +197,41 @@ $$.
 
 **Resultado:** La velocidad máxima teórica es ***≈ 0.68 m/s.***. En el piso real sera menor por la fricción, el peso del carro y las perdidas mecánicas.
 
-### **Ejercicio 6: **
+### **Ejercicio 6: Dirección diferencial.**
+La rueda izquierda va a 0.4 m/s, la derecha a 0.6 m/s, y la separación entre ruedas es L = 0.12m. Usando $v=\frac{{v_{der}}+{v_{izqu}}}{2}$ , $w=\frac{{v_{der}}-{v_{izqu}}}{L}$ y $R=\frac {v}{w}$
+Calcular la velocidad del centro del carro, su velocidad de giro, y el radio de la curva que describe.
+
+**Datos**
+- Velocidad izquierda: 0.4m/s
+- Velocidad derecha: 0.6 m/s
+- Separación entre ruedas: 0.12m
+
+**Solución**
+
+$$
+v=\frac{{0.6}+{0.4}}{2}=0.5m/s
+$$
+
+$$
+w=\frac{{0.6}-{0.4}}{0.12} ≈1.67rad/s
+$$
+
+$$
+R=\frac{0.5}{1.67} ≈0.3m
+$$
+
+**Resultado:** La velocidad el centro es ***0.5 m/s***, la velocidad angular ***1.67 rad/s** y el radio de la curva ***0.3m***
+
+### Ejercicio 7: Diseño.***
+ Se busca que el carro sea el doble de "fuerte" para empujar la pelota en el torneo, aceptando ir a la mitad de velocidad. Proponer una relación de engranes adicional entre motor y rueda, y calcular la nueva velocidad máxima resultante.
+
+ **Datos**
+ - Velocidad original: 0.68 m/s
+
+ **Solución**
+
+$$
+v_{nuevo}=\frac{0.68}{2}=0.34m/s
+$$
+
+**Resultado:** La relación adicional es ***2:1***, la nueva velocidad máxima ***0.34m/s***
