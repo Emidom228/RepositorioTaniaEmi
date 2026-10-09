@@ -4,13 +4,13 @@
 **Tema:** Mecanismos 101
 
 ## Objetivos
-- Enlace Bluetooth: 
+- **Enlace Bluetooth:**
     * SerialBT.begin() funcionando, comandos recibidos y mostraados en el Monitor Serial
     * Verificar que el emparejamiento con el celular es estable antes de avanzar 
-- LED con bluetooth:
+- **LED con bluetooth:**
     * Controlar el LED con los comandos ON/OFF desde el celular 
     * Uso correcto de mensaje.trimn(), sin esto la comparación falla
-- Protocolo de comando:
+- **Protocolo de comando:**
     * Documentar la tabla comando --> acción(ON/OFF)
 
 ## Materiales
@@ -55,5 +55,5 @@ Armado del circuito en el Protoboard
 Pedimos apoyo a la profesora y se identifico que la señal se estaba envviando a COM5(puerto físico), en vez de COM8(puerto inalámbrico)
 
 ---
-Tania Hernández Cruz
+Tania Hernández Cruz  
 Jesús Emiliano Hernández Domínguez
