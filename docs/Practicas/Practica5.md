@@ -14,13 +14,13 @@
     * Documentar la tabla comando --> acción(ON/OFF)
 
 ## Materiales
-- ESP32 Devkit V1 (1x)
-- Cable USB de datos (1x)
-- LED (1x)
-- Resitencia de 220Ω (1x)
-- Protoboard (1x)
-- Jumpers 
-- Computadora o celular con bluetooth con la app "Serial Bluetooth Terminal"
+1. ESP32 Devkit V1 (1x)
+2. Cable USB de datos (1x)
+3. LED (1x)
+4. Resitencia de 220Ω (1x)
+5. Protoboard (1x)
+6. Jumpers 
+7. Computadora o celular con bluetooth con la app "Serial Bluetooth Terminal"
 
 ## Procedimiento
  
@@ -41,8 +41,8 @@
 ![Ensamble Bluetooth](../img/protoboard.JPG)
 Armado del circuito en el Protoboard
 
-**Video**
-[Video funcionamiento ](../img/bluetooth.MP4)
+
+[Video del funcionamiento ](../img/bluetooth.MP4)
 
 ### Explicación
 1. La computadora envia los comandos (ON/OFF) al ESP32. 
@@ -51,5 +51,9 @@ Armado del circuito en el Protoboard
 4. Para que se logre la comunicación inalambrica, en ArduinIDE seleccionamos el puerto COM8 
 
 ### Bitacora de fallas
-- El programa compilaba correctamente pero el ESP32 no respondia
+- El programa compilaba correctamente pero el ESP32 no respondia  
 Pedimos apoyo a la profesora y se identifico que la señal se estaba envviando a COM5(puerto físico), en vez de COM8(puerto inalámbrico)
+
+---
+Tania Hernández Cruz
+Jesús Emiliano Hernández Domínguez
