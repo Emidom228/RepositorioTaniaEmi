@@ -123,10 +123,11 @@ La velocidad es de ***75rpm*** y gira a un par de ***0.4N·m***
 ### **Ejercicio 2: Tren compuesto**    
  Dos etapas en serie: 12→36 dientes, seguida de 10→40 dientes. ¿Cuál es la relación total? Si la entrada gira a 960 rpm, ¿a qué velocidad gira la salida final
 
-**Datos**  
+**Datos**
+
 - Etapa 1: 12→36 dientes
 - Etapa 2: 10→40 dientes
-- Velocidad de entrada: 960rpm
+- Velocidad de entrada: 960 rpm
 
  **Solución**  
 *Relación de transmisión*
@@ -152,10 +153,11 @@ $$
 
 **Resultado:** La relación total es de ***12*** y la salida final gira a ***80rpm***
 
-### **Ejercicio 3:Sinfín**
+### **Ejercicio 3: Sinfín**
  Un sinfín de 2 hilos mueve una corona de 40 dientes. (En un sinfín, Z1 es el número de hilos.) ¿Cuál es la relación de transmisión? ¿Cuántas vueltas del sinfín se necesitan para una vuelta de la corona?
  
  **Datos**
+
  - Sinfin: 2 hilos
  - Corona: 40 dientes 
 
@@ -171,6 +173,7 @@ $$
 Contar las ranuras de la cruz del laboratorio y calcular: grados que avanza por cada paso, y vueltas completas del impulsor necesarias para una vuelta completa de la cruz.
 
 **Datos**
+
 - Número de ranuras: 6
 
 **Solución**
@@ -186,6 +189,7 @@ $$
  ¿Cuál es la velocidad máxima teórica del carro en m/s? ¿Por qué en el piso real será menor que ese valor teórico?
 
  **Datos**
+
  - Reducción interna: 1:48
  - Rueda a 6V gira: 200rpm sin carga
  - Diamentro de rueda: 65mm
@@ -202,6 +206,7 @@ La rueda izquierda va a 0.4 m/s, la derecha a 0.6 m/s, y la separación entre ru
 Calcular la velocidad del centro del carro, su velocidad de giro, y el radio de la curva que describe.
 
 **Datos**
+
 - Velocidad izquierda: 0.4m/s
 - Velocidad derecha: 0.6 m/s
 - Separación entre ruedas: 0.12m
@@ -222,10 +227,11 @@ $$
 
 **Resultado:** La velocidad el centro es ***0.5 m/s***, la velocidad angular ***1.67 rad/s** y el radio de la curva ***0.3m***
 
-### Ejercicio 7: Diseño.***
+### **Ejercicio 7: Diseño.***
  Se busca que el carro sea el doble de "fuerte" para empujar la pelota en el torneo, aceptando ir a la mitad de velocidad. Proponer una relación de engranes adicional entre motor y rueda, y calcular la nueva velocidad máxima resultante.
 
  **Datos**
+ 
  - Velocidad original: 0.68 m/s
 
  **Solución**
