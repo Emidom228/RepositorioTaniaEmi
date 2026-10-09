@@ -198,7 +198,7 @@ El motor TT tiene reducción interna 1:48 y, a 6 V, la rueda gira aproximadament
 
 $$
 v= π*0.065*\frac{200}{60}= 0.68 m/s (aproximadamente)
-$$.
+$$
 
 **Resultado:** La velocidad máxima teórica es ***≈ 0.68 m/s.***. En el piso real sera menor por la fricción, el peso del carro y las perdidas mecánicas.
 
