@@ -2,7 +2,8 @@
 **Institución:** Universidad Iberoamericana Puebla  
 **Materia:** Introducción a la Mecatrónica  
 **Integrantes:** Tania Hernández Cruz, Jesús Emiliano Hernández Domínnguez
- 
+
+*Octubre 2 de 2026* 
 ## Objetivo
  Fabricar, diseñar y programar un carro utilizando un ESP32 controlado por Bluetooth desde un dispositivo (celular o computadora). Al final, se demostrará su funcionamiento en un torneo de fútbol 1v1 contra los demás proyectos.
  
@@ -12,7 +13,7 @@
  - El carro se mueve adelante, atrás, izquierda, derecha y alto por comandos Bluetooth.
  - Control de velocidad por PWM (mínimo 3 niveles o velocidad proporcional).
  - El protocolo de comandos está documentado en el portafolio (qué comando hace qué).
- - Failsafe: si se pierde el enlace o no llegan comandos en ≤1 s, el carro se detiene solo.                                                                                                 
+ - Failsafe: si se pierde el enlace o no llegan comandos en ≤1 s, el carro se detiene solo.                      
  - Interruptor físico de encendido/apagado accesible sin desarmar nada.
  - Alimentación de motores separada del ESP32 (con GND común), como se vio en el tema de Actuadores.
  - Cableado ordenado y sujeto: nada de cables sueltos arrastrando.
@@ -26,10 +27,14 @@
  - Controlarlo con un control de Xbox.
 
 ## Arquitectura
- 
+ <div style="display: flex; align-items: center; gap: 20px;">
+  <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/arq.jpeg" width="75%" alt="Arquitectura Proyecto ">
+  <p><i>Lectura del control con Bluepad32, cálculo de la velocidad de cada motor con el joystick y failsafe que detiene el carro tras 500 ms sin datos.</i></p>
+</div>   
+
 ## Plan por semanas
 **Semana 1:** Modelado del chasis en SolidWorks, a partir de un kit para visualizar mejor los componentes y la estructura. Soldado de los cables a los motores, y montaje de las ruedas y el switch para asegurar su funcionamiento.
-**Semana 2:** Impresión 3D del chasis y del capote para agregar el cuadrado de 6 × 6 cm. Programación del control por Bluetooth para validar su funcionamiento por medio de un joystick.
+**Semana 2:** Impresión 3D del chasis y del capote para agregar el cuadrado de 6 × 6 cm. Programación del control por Bluetooth para validar su funcionamiento por medio de un control.
  
 ## Criterios de éxito
 - Cumplir los 8 requisitos funcionales.
@@ -38,11 +43,12 @@
 - Lograr controlar el carro por medio de un control de Xbox.
  
 ## Boceto del chasis
- 
+
+ ![dibujo](../img/dibujo.jpeg)
  
 ## BOM
- 
-| Componente | Cantidad | Costo (MXN) |
+
+| Componente | Cantidad | Costo |
 |---|---|---|
 | Batería portátil | 1 pza | $300.00 |
 | Termofil 1/16 | 1 pza | $10.00 |
@@ -54,19 +60,19 @@
 | Cinchos negros | 1 paquete | $34.00 |
 | Kit de chasis | 1 pza | $363.00 |
 | Cable negro y rojo | 3 m | $30.00 |
-| Tornillos | 1 lote | $25.00 |
+| Tornillos | 1 paquete | $25.00 |
  
- 
+
 ## Análisis de riesgos
- 
-Riesgo 
 - Que la soldadura se rompa 
 - No se conecte el Bluetooth al ESP32
 - Existan cables sueltos que se atoren con las ruedas
 - Descarga de las pilas por exceso de consumo
 - Fallar al intentar conectar 4 llantas a 2 motores
  
- 
+
+*Octubre 9 de 2026*
+
 ## Bitácora de fallas
  
 | ¿Qué falló? | ¿Cómo lo encontraron? | ¿Cómo lo resolvieron? |
@@ -75,8 +81,32 @@ Riesgo
 | Idea principal de 4 llantas | Descubrimos que era un motor por llanta, por lo que se descartó la idea de las 4 llantas | Agregamos una rueda loca para que el carro tenga soporte |
 | Descarga de las pilas | Los motores consumían más corriente que el ESP32, por lo que las pilas se agotaban muy rápido | Utilizando dos fuentes de alimentación diferentes |
 | Diseño de las pinzas (empujar la pelota) | Nos comentaron que no era posible nuestra idea porque retenía la pelota | Lo cambiamos por un cuadrado para avanzar con la pelota |
+| Biblioteca para el control | Al buscarla en el Gestor de bibliotecas del Arduino IDE aparecía otra librería con nombre parecido, y el ESP32 no la reconocía. Investigamos y vimos que, para el ESP32, Bluepad32 no se instala como librería sino como paquete de placa. | Agregamos las URLs del paquete de ESP32 y del paquete Bluepad32 en las Preferencias del IDE, instalamos esp32 y esp32_bluepad32 desde el Gestor de tarjetas y seleccionamos la placa "Bluepad32_ESP32”. |
 
-## Código 
+
+*Octubre 16 de 2026*
+
+
+## Readme
+
+### Configuración de Bluepad32 para Control Inalámbrico 
+Para usar el control de Nintendo Switch Joy-Con / Xbox con el ESP32, se configuraron las siguientes URLs adicionales en las preferencias del IDE de Arduino:
+https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+
+https://raw.githubusercontent.com/ricardoquesada/esp32-arduino-lib-builder/master/bluepad32_files/package_esp32_bluepad32_index.json
+
+### Protocolo de Comandos
+- **Joystick Analógico (Eje Y):** Controla avance y retroceso con una zona muerta digital de 35 unidades.
+- **Joystick Analógico (Eje X):** Aplica mezcla de tracción diferencial dividida entre 2 (velocidadBase / 2).
+- **Botones L1 / R1 (SL / SR):** Disminuyen o aumentan la velocidad base en pasos de 15 unidades (Rango: 60 a 255).
+
+### Esquemático
+
+[Video del funcionamiento ](../img/simulacion.mp4)
+
+En este video se muestra la simulación del circuito del carro en Wokwi. Como Wokwi no tiene un puente H ni motores DC entre sus componentes, se utilizo un chip personalizado creado con código por la comunidad, que representa al driver TB6612FNG, un puente H doble. Cada motor está representado con dos LEDs: el verde prende cuando gira hacia adelante y el rojo cuando gira hacia atrás. Al correr la simulación, el programa mueve cada motor por separado, luego los dos juntos y al final hace los giros, y en el monitor serial se ve qué movimiento está haciendo.
+
+### Código 
 ``` c
 #include <Arduino.h>
 #include <Bluepad32.h>
@@ -267,7 +297,11 @@ void loop() {
 }
 ```
 
- 
+
+
+
+## Video de demostración
+
 ## Requisitos vs. resultados
  
 | # | Requisito | ¿Se cumple? |
@@ -294,3 +328,5 @@ void loop() {
 **Planear y respetar los tiempos deja margen para corregir**
  Tuvimos fallas al imprimir, y logramos arreglarlas porque aún había tiempo para reimprimir y ajustar. Por eso, realizar el proyecto en tiempo ayuda a que se puedan resolver estos errores sin prisa. Aprendimos que los proyectos requieren tiempo para solucionar estos errores y solo se pueden solucionar si se trabaja con anticipación.
  
+**El switch debe cortar la línea positiva de la alimentación y ser accesible.**
+Aprendimos que un interruptor funciona abriendo o cerrando el camino de la corriente, por lo que se conecta en serie con el cable positivo de la batería, usando la pata central y una lateral. También vimos que debe soportar la corriente del circuito y colocarse en un lugar accesible, para poder apagar el carro rápidamente sin desarmarlo.
