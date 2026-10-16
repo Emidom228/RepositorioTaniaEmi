@@ -2,7 +2,7 @@
 **Institución:** Universidad Iberoamericana Puebla  
 **Materia:** Introducción a la Mecatrónica  
 **Integrantes:** Tania Hernández Cruz, Jesús Emiliano Hernández Domínguez  
-
+  
 > *Octubre 2 de 2026* 
 ## **Objetivo**
  Fabricar, diseñar y programar un carro utilizando un ESP32 controlado por Bluetooth desde un dispositivo (celular o computadora). Al final, se demostrará su funcionamiento en un torneo de fútbol 1v1 contra los demás proyectos.
@@ -69,10 +69,9 @@
 - Existan cables sueltos que se atoren con las ruedas
 - Descarga de las pilas por exceso de consumo
 - Fallar al intentar conectar 4 llantas a 2 motores
- 
-
+   
+   
 > *Octubre 9 de 2026*
-
 ## **Bitácora de fallas**
  
 | ¿Qué falló? | ¿Cómo lo encontraron? | ¿Cómo lo resolvieron? |
@@ -81,12 +80,10 @@
 | Idea principal de 4 llantas | Descubrimos que era un motor por llanta, por lo que se descartó la idea de las 4 llantas | Agregamos una rueda loca para que el carro tenga soporte |
 | Descarga de las pilas | Los motores consumían más corriente que el ESP32, por lo que las pilas se agotaban muy rápido | Utilizando dos fuentes de alimentación diferentes |
 | Diseño de las pinzas (empujar la pelota) | Nos comentaron que no era posible nuestra idea porque retenía la pelota | Lo cambiamos por un cuadrado para avanzar con la pelota |
-| Biblioteca para el control | Al buscarla en el Gestor de bibliotecas del Arduino IDE aparecía otra librería con nombre parecido, y el ESP32 no la reconocía. Investigamos y vimos que, para el ESP32, Bluepad32 no se instala como librería sino como paquete de placa. | Agregamos las URLs del paquete de ESP32 y del paquete Bluepad32 en las Preferencias del IDE, instalamos esp32 y esp32_bluepad32 desde el Gestor de tarjetas y seleccionamos la placa "Bluepad32_ESP32”. |
-
+| Biblioteca para el control | Al buscarla en el Gestor de bibliotecas del Arduino IDE aparecía otra librería con nombre parecido, y el ESP32 no la reconocía. Investigamos y vimos que, para el ESP32, Bluepad32 no se instala como librería sino como paquete de placa. | Agregamos las URLs del paquete de ESP32 y del paquete Bluepad32 en las Preferencias del IDE, instalamos esp32 y esp32_bluepad32 desde el Gestor de tarjetas y seleccionamos la placa "Bluepad32_ESP32”. |  
+  
 
 > *Octubre 16 de 2026*
-
-
 ## **Readme**
 
 ### Configuración de Bluepad32 para Control Inalámbrico 
@@ -316,18 +313,13 @@ void loop() {
 | 7 | Cableado ordenado y sujeto | Sí |
 | 8 | Superficie plana horizontal de al menos 6 × 6 cm en la parte superior | Sí |
  
-
- 
 ## **Lecciones aprendidas**
  
- **La alimentación de los motores y la del ESP32 deben ser independientes**  2
+ 1. **La alimentación de los motores y la del ESP32 deben ser independientes**  
  Al conectar los motores y el ESP32 a las mismas pilas, la batería se agotaba muy rápido. Aprendimos que los motores consumen mucha más corriente que el microcontrolador y que cada subsistema necesita su propia fuente.
- 
-**Partir de algo físico facilita y acelera el modelado en CAD**  
+2. **Partir de algo físico facilita y acelera el modelado en CAD**  
  Compramos un kit de carrito para visualizar la estructura, y con ese modelo tangible como referencia modelamos nuestro chasis en SolidWorks. Aprendimos que tener las medidas y la forma de los componentes a la mano reduce errores y ahorra tiempo en el diseño.
- 
-**Planear y respetar los tiempos deja margen para corregir**
+3. **Planear y respetar los tiempos deja margen para corregir**
  Tuvimos fallas al imprimir, y logramos arreglarlas porque aún había tiempo para reimprimir y ajustar. Por eso, realizar el proyecto en tiempo ayuda a que se puedan resolver estos errores sin prisa. Aprendimos que los proyectos requieren tiempo para solucionar estos errores y solo se pueden solucionar si se trabaja con anticipación.
- 
-**El switch debe cortar la línea positiva de la alimentación y ser accesible.**
+4. **El switch debe cortar la línea positiva de la alimentación y ser accesible.**
 Aprendimos que un interruptor funciona abriendo o cerrando el camino de la corriente, por lo que se conecta en serie con el cable positivo de la batería, usando la pata central y una lateral. También vimos que debe soportar la corriente del circuito y colocarse en un lugar accesible, para poder apagar el carro rápidamente sin desarmarlo.
