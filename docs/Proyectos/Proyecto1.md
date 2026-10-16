@@ -1,4 +1,4 @@
-# Proyecto 1: Carro RC por Bluetooth
+# Proyecto 1:Kick off
 **Institución:** Universidad Iberoamericana Puebla  
 **Materia:** Introducción a la Mecatrónica  
 **Integrantes:** Tania Hernández Cruz, Jesús Emiliano Hernández Domínnguez
@@ -6,18 +6,19 @@
 ## Objetivo
  Fabricar, diseñar y programar un carro utilizando un ESP32 controlado por Bluetooth desde un dispositivo (celular o computadora). Al final, se demostrará su funcionamiento en un torneo de fútbol 1v1 contra los demás proyectos.
  
+
 ## Requisitos
- ### Funcionales
+### Funcionales
  - El carro se mueve adelante, atrás, izquierda, derecha y alto por comandos Bluetooth.
  - Control de velocidad por PWM (mínimo 3 niveles o velocidad proporcional).
  - El protocolo de comandos está documentado en el portafolio (qué comando hace qué).
- - Failsafe: si se pierde el enlace o no llegan comandos en ≤1 s, el carro se detiene solo.
+ - Failsafe: si se pierde el enlace o no llegan comandos en ≤1 s, el carro se detiene solo.                                                                                                 
  - Interruptor físico de encendido/apagado accesible sin desarmar nada.
  - Alimentación de motores separada del ESP32 (con GND común), como se vio en el tema de Actuadores.
  - Cableado ordenado y sujeto: nada de cables sueltos arrastrando.
  - Superficie plana horizontal de al menos 6 × 6 cm en la parte superior, despejada: ahí vivirá el marcador ArUco del Proyecto Final.
 
- ### Propios
+### Propios
  - Que tenga 4 llantas.
  - Que tenga un capote completo.
  - Utilizar un puente L289N.
@@ -42,7 +43,7 @@
 ## BOM
  
 | Componente | Cantidad | Costo (MXN) |
-|---|---|---|---|
+|---|---|---|
 | Batería portátil | 1 pza | $300.00 |
 | Termofil 1/16 | 1 pza | $10.00 |
 | Jumper hembra-hembra | 1 pza | $38.00 |
@@ -74,6 +75,198 @@ Riesgo
 | Idea principal de 4 llantas | Descubrimos que era un motor por llanta, por lo que se descartó la idea de las 4 llantas | Agregamos una rueda loca para que el carro tenga soporte |
 | Descarga de las pilas | Los motores consumían más corriente que el ESP32, por lo que las pilas se agotaban muy rápido | Utilizando dos fuentes de alimentación diferentes |
 | Diseño de las pinzas (empujar la pelota) | Nos comentaron que no era posible nuestra idea porque retenía la pelota | Lo cambiamos por un cuadrado para avanzar con la pelota |
+
+## Código 
+``` c
+#include <Arduino.h>
+#include <Bluepad32.h>
+
+// ==========================================
+// 1. VARIABLES Y PROTOTIPOS
+// ==========================================
+void processGamepad(ControllerPtr ctl);
+void moverMotores(int izq, int der);
+void processControllers();
+
+// Arreglo para guardar el control conectado
+ControllerPtr myControllers[BP32_MAX_GAMEPADS];
+
+// Control de seguridad (Failsafe): Guarda el tiempo en milisegundos del último paquete recibido
+unsigned long ultimoTiempoDatos = 0;
+const unsigned long TIMEOUT_FAILSAFE = 500; // Si pasan más de 500ms sin datos, frena por seguridad
+
+// ==========================================
+// 2. PINES DEL DRIVER DE MOTORES (TB6612FNG)
+// ==========================================
+const int PIN_STBY = 23; // Encendido general del driver
+const int PWMA = 13;     // Velocidad motor izquierdo
+const int AIN1 = 12;     // Dirección motor izquierdo A
+const int AIN2 = 14;     // Dirección motor izquierdo B
+const int PWMB = 25;     // Velocidad motor derecho
+const int BIN1 = 27;     // Dirección motor derecho A
+const int BIN2 = 26;     // Dirección motor derecho B
+
+int velocidadBase = 150; // Velocidad inicial (de 0 a 255)
+
+// ==========================================
+// 3. CONEXIÓN Y DESCONEXIÓN BLUETOOTH
+// ==========================================
+void onConnectedController(ControllerPtr ctl) {
+    for (int i = 0; i < BP32_MAX_GAMEPADS; i++) {
+        if (myControllers[i] == nullptr) {
+            Serial.printf("Control conectado en ranura %d\n", i);
+            myControllers[i] = ctl;
+            break;
+        }
+    }
+}
+
+void onDisconnectedController(ControllerPtr ctl) {
+    for (int i = 0; i < BP32_MAX_GAMEPADS; i++) {
+        if (myControllers[i] == ctl) {
+            Serial.printf("Control desconectado de ranura %d\n", i);
+            myControllers[i] = nullptr;
+            moverMotores(0, 0); // Frena de golpe si se desconecta
+            break;
+        }
+    }
+}
+
+// ==========================================
+// 4. CONTROL DE MOTORES
+// ==========================================
+void moverMotores(int velIzq, int velDer) {
+    digitalWrite(PIN_STBY, HIGH); // Activar driver
+
+    // Motor Izquierdo
+    velIzq = -velIzq;
+    if (velIzq > 0) {
+        digitalWrite(AIN1, HIGH);
+        digitalWrite(AIN2, LOW);
+    } else if (velIzq < 0) {
+        digitalWrite(AIN1, LOW);
+        digitalWrite(AIN2, HIGH);
+        velIzq = -velIzq;
+    } else {
+        digitalWrite(AIN1, LOW);
+        digitalWrite(AIN2, LOW);
+    }
+    analogWrite(PWMA, constrain(velIzq, 0, 255));
+
+    // Motor Derecho
+    velDer = -velDer;
+    if (velDer > 0) {
+        digitalWrite(BIN1, HIGH);
+        digitalWrite(BIN2, LOW);
+    } else if (velDer < 0) {
+        digitalWrite(BIN1, LOW);
+        digitalWrite(BIN2, HIGH);
+        velDer = -velDer;
+    } else {
+        digitalWrite(BIN1, LOW);
+        digitalWrite(BIN2, LOW);
+    }
+    analogWrite(PWMB, constrain(velDer, 0, 255));
+}
+
+// ==========================================
+// 5. LECTURA DEL JOY-CON IZQUIERDO
+// ==========================================
+void processGamepad(ControllerPtr ctl) {
+    // Actualizamos el cronómetro del failsafe porque sí hay señal activa
+    ultimoTiempoDatos = millis();
+
+    // Botones L1 (SL) y R1 (SR) para cambiar velocidad en caliente
+    if (ctl->l1()) { 
+        velocidadBase = max(60, velocidadBase - 15);
+        Serial.printf("Velocidad baja: %d\n", velocidadBase);
+        delay(200); 
+    }
+    if (ctl->r1()) { 
+        velocidadBase = min(255, velocidadBase + 15);
+        Serial.printf("Velocidad alta: %d\n", velocidadBase);
+        delay(200);
+    }
+
+    // Leer los ejes del joystick
+    int joystickY = ctl->axisY(); 
+    int joystickX = ctl->axisX(); 
+
+    // Zona muerta para que no se mueva solo por vibración o juego del dedo
+    if (abs(joystickY) < 35) joystickY = 0;
+    if (abs(joystickX) < 35) joystickX = 0;
+
+    // Calcular la mezcla para avance y giros
+    int potenciaEje = map(joystickY, -511, 512, -velocidadBase, velocidadBase);
+    int giroEje = map(joystickX, -511, 512, -velocidadBase / 2, velocidadBase / 2);
+
+    int motorIzq = potenciaEje + giroEje;
+    int motorDer = potenciaEje - giroEje;
+
+    moverMotores(motorIzq, motorDer);
+}
+
+void processControllers() {
+    bool controlActivo = false;
+    for (auto myController : myControllers) {
+        if (myController && myController->isConnected() && myController->hasData()) {
+            controlActivo = true;
+            if (myController->isGamepad()) {
+                processGamepad(myController);
+            }
+        }
+    }
+
+    // SISTEMA FAILSAFE: Si el control estaba conectado pero deja de mandar datos de golpe
+    if (controlActivo == false) {
+        if (millis() - ultimoTiempoDatos > TIMEOUT_FAILSAFE) {
+            moverMotores(0, 0); // Corta motores por seguridad
+        }
+    }
+}
+
+// ==========================================
+// 6. CONFIGURACIÓN INICIAL
+// ==========================================
+void setup() {
+    Serial.begin(115200);
+    
+    // Configurar pines de los motores como salidas
+    pinMode(PIN_STBY, OUTPUT);
+    pinMode(PWMA, OUTPUT);
+    pinMode(AIN1, OUTPUT);
+    pinMode(AIN2, OUTPUT);
+    pinMode(PWMB, OUTPUT);
+    pinMode(BIN1, OUTPUT);
+    pinMode(BIN2, OUTPUT);
+
+    digitalWrite(PIN_STBY, HIGH);
+
+    // Arrancar Bluetooth
+    BP32.setup(&onConnectedController, &onDisconnectedController);
+    BP32.enableVirtualDevice(false);
+    
+    ultimoTiempoDatos = millis(); // Inicializar cronómetro
+}
+
+// ==========================================
+// 7. BUCLE PRINCIPAL
+// ==========================================
+void loop() {
+    bool dataUpdated = BP32.update();
+    if (dataUpdated) {
+        processControllers();
+    } else {
+        // Si el ciclo pasa y no hay datos nuevos, evaluamos el failsafe por tiempo
+        if (millis() - ultimoTiempoDatos > TIMEOUT_FAILSAFE) {
+            moverMotores(0, 0);
+        }
+    }
+
+    delay(20);
+}
+```
+
  
 ## Requisitos vs. resultados
  
@@ -100,5 +293,4 @@ Riesgo
  
 **Planear y respetar los tiempos deja margen para corregir**
  Tuvimos fallas al imprimir, y logramos arreglarlas porque aún había tiempo para reimprimir y ajustar. Por eso, realizar el proyecto en tiempo ayuda a que se puedan resolver estos errores sin prisa. Aprendimos que los proyectos requieren tiempo para solucionar estos errores y solo se pueden solucionar si se trabaja con anticipación.
- 
  
