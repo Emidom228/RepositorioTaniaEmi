@@ -1,14 +1,14 @@
 # Proyecto 1:Kick off
 **Institución:** Universidad Iberoamericana Puebla  
 **Materia:** Introducción a la Mecatrónica  
-**Integrantes:** Tania Hernández Cruz, Jesús Emiliano Hernández Domínnguez
+**Integrantes:** Tania Hernández Cruz, Jesús Emiliano Hernández Domínguez  
 
-*Octubre 2 de 2026* 
-## Objetivo
+> *Octubre 2 de 2026* 
+## **Objetivo**
  Fabricar, diseñar y programar un carro utilizando un ESP32 controlado por Bluetooth desde un dispositivo (celular o computadora). Al final, se demostrará su funcionamiento en un torneo de fútbol 1v1 contra los demás proyectos.
  
 
-## Requisitos
+## **Requisitos**
 ### Funcionales
  - El carro se mueve adelante, atrás, izquierda, derecha y alto por comandos Bluetooth.
  - Control de velocidad por PWM (mínimo 3 niveles o velocidad proporcional).
@@ -26,27 +26,27 @@
  - Que tenga unas pinzas para empujar la pelota.
  - Controlarlo con un control de Xbox.
 
-## Arquitectura
+## **Arquitectura**
  <div style="display: flex; align-items: center; gap: 20px;">
   <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/arq.jpeg" width="75%" alt="Arquitectura Proyecto ">
   <p><i>Lectura del control con Bluepad32, cálculo de la velocidad de cada motor con el joystick y failsafe que detiene el carro tras 500 ms sin datos.</i></p>
 </div>   
 
-## Plan por semanas
-**Semana 1:** Modelado del chasis en SolidWorks, a partir de un kit para visualizar mejor los componentes y la estructura. Soldado de los cables a los motores, y montaje de las ruedas y el switch para asegurar su funcionamiento.
-**Semana 2:** Impresión 3D del chasis y del capote para agregar el cuadrado de 6 × 6 cm. Programación del control por Bluetooth para validar su funcionamiento por medio de un control.
+## **Plan por semanas**
+- **Semana 1:** Modelado del chasis en SolidWorks, a partir de un kit para visualizar mejor los componentes y la estructura. Soldado de los cables a los motores, y montaje de las ruedas y el switch para asegurar su funcionamiento.  
+- **Semana 2:** Impresión 3D del chasis y del capote para agregar el cuadrado de 6 × 6 cm. Programación del control por Bluetooth para validar su funcionamiento por medio de un control.
  
-## Criterios de éxito
+## **Criterios de éxito**
 - Cumplir los 8 requisitos funcionales.
 - Tener un failsafe donde el carro se detenga al no recibir indicaciones.
 - Entregar el repositorio en tiempo y forma.
 - Lograr controlar el carro por medio de un control de Xbox.
  
-## Boceto del chasis
+## **Boceto del chasis**
 
  ![dibujo](../img/dibujo.jpeg)
  
-## BOM
+## **BOM**
 
 | Componente | Cantidad | Costo |
 |---|---|---|
@@ -63,7 +63,7 @@
 | Tornillos | 1 paquete | $25.00 |
  
 
-## Análisis de riesgos
+## **Análisis de riesgos**
 - Que la soldadura se rompa 
 - No se conecte el Bluetooth al ESP32
 - Existan cables sueltos que se atoren con las ruedas
@@ -71,9 +71,9 @@
 - Fallar al intentar conectar 4 llantas a 2 motores
  
 
-*Octubre 9 de 2026*
+> *Octubre 9 de 2026*
 
-## Bitácora de fallas
+## **Bitácora de fallas**
  
 | ¿Qué falló? | ¿Cómo lo encontraron? | ¿Cómo lo resolvieron? |
 |---|---|---|
@@ -84,13 +84,14 @@
 | Biblioteca para el control | Al buscarla en el Gestor de bibliotecas del Arduino IDE aparecía otra librería con nombre parecido, y el ESP32 no la reconocía. Investigamos y vimos que, para el ESP32, Bluepad32 no se instala como librería sino como paquete de placa. | Agregamos las URLs del paquete de ESP32 y del paquete Bluepad32 en las Preferencias del IDE, instalamos esp32 y esp32_bluepad32 desde el Gestor de tarjetas y seleccionamos la placa "Bluepad32_ESP32”. |
 
 
-*Octubre 16 de 2026*
+> *Octubre 16 de 2026*
 
 
-## Readme
+## **Readme**
 
 ### Configuración de Bluepad32 para Control Inalámbrico 
-Para usar el control de Nintendo Switch Joy-Con / Xbox con el ESP32, se configuraron las siguientes URLs adicionales en las preferencias del IDE de Arduino:
+Para usar el control de Nintendo Switch Joy-Con / Xbox con el ESP32, se configuraron las siguientes URLs adicionales en las preferencias del IDE de Arduino:  
+  
 https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
 
 https://raw.githubusercontent.com/ricardoquesada/esp32-arduino-lib-builder/master/bluepad32_files/package_esp32_bluepad32_index.json
@@ -300,9 +301,9 @@ void loop() {
 
 
 
-## Video de demostración
+## **Video de demostración**
 
-## Requisitos vs. resultados
+## **Requisitos vs. resultados**
  
 | # | Requisito | ¿Se cumple? |
 |---|---|---|
@@ -317,7 +318,7 @@ void loop() {
  
 
  
-## Lecciones aprendidas
+## **Lecciones aprendidas**
  
  **La alimentación de los motores y la del ESP32 deben ser independientes**  2
  Al conectar los motores y el ESP32 a las mismas pilas, la batería se agotaba muy rápido. Aprendimos que los motores consumen mucha más corriente que el microcontrolador y que cada subsistema necesita su propia fuente.
