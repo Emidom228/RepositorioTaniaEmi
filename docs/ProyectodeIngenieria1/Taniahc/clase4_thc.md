@@ -6,7 +6,7 @@ Para aprender a utilizar la máquina de corte láser, tuvimos que realizar un en
 Nuestra propuesta de diseño fue: **Drágon chimuelo**
 
 ## Diseño en SolidWorks 
-Se diseñaron en total: 9 piezas
+Se diseñaron en total: 9 piezas  
 - Alas (2)
 - Alerón (1)
 - Cabeza (2)
@@ -17,10 +17,9 @@ Se diseñaron en total: 9 piezas
 - Cuerpo completo (1)
 - Cuerpo mitad (2)
 
-![Aleron](../../img/aleron.jpeg)
 
 <div style="display: flex; align-items: center; gap: 20px;">
-  <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/aleron.jpeg" width="75%" alt="Montaje potenciómetro">
+  <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/aleron.jpeg" width="75%" alt="Piezas 2d">
   <p><i>Imagen representativa de como se realizaron las piezas</i></p>
 </div>   
 
@@ -28,6 +27,15 @@ Se diseñaron en total: 9 piezas
 Antes de cortar las piezas, realizamos un ensamble en solidworks para asegurarnos que las piezas encajaran o en caso de que no enecajen poder corregirlo antes de cortar.
 Vista de las piezas en 3d
 ![Ensamble](../../img/ensamble.jpeg)
+
+<div style="display: flex; align-items: center; gap: 20px;">
+  <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/ensamble.jpeg" width="75%" alt="Ensamble">
+  <p><i> E</i></p>
+</div>   
+
+<div style="text-align: center;">
+    <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/ensamble.jpeg" width="20" height="20">
+</div>
 
 
 
