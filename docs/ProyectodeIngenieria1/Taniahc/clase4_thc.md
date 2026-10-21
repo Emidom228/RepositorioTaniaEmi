@@ -7,6 +7,7 @@ Nuestra propuesta de diseño fue: **Drágon chimuelo**
 
 ## Diseño en SolidWorks 
 Se diseñaron en total: 9 piezas  
+
 - Alas (2)
 - Alerón (1)
 - Cabeza (2)
@@ -25,17 +26,11 @@ Se diseñaron en total: 9 piezas
 
 ### **Ensamble en Solidworks**
 Antes de cortar las piezas, realizamos un ensamble en solidworks para asegurarnos que las piezas encajaran o en caso de que no enecajen poder corregirlo antes de cortar.
-Vista de las piezas en 3d
-![Ensamble](../../img/ensamble.jpeg)
 
 <div style="display: flex; align-items: center; gap: 20px;">
   <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/ensamble.jpeg" width="75%" alt="Ensamble">
-  <p><i> E</i></p>
+  <p><i> Asi se visualizo nuestro ensamble.</i></p>
 </div>   
-
-<div style="text-align: center;">
-    <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/ensamble.jpeg" width="20" height="20">
-</div>
 
 
 
