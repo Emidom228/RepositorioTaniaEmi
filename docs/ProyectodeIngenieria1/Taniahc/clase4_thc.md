@@ -57,7 +57,9 @@ Después de el corte, realizamos el ensamble de la figura dando como resultado u
 
 
 
+<a href="../../img/chimuelo.zip" download>Descargar carpeta ZIP</a
 
+![archivos](../../img/chimuelo.zip)
 
 
 
