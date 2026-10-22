@@ -18,6 +18,15 @@ Se diseñaron en total: 9 piezas
 - Cuerpo completo (1)
 - Cuerpo mitad (2)
 
+Antes de comenzar a diseñar las piezas en Solidworks, realizamos distintos bocetos a mano para poder visualizar mejor las medidas y como iba a quedar la figura. 
+
+<div style="display: flex; align-items: center; gap: 20px;">
+  <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/boceto.jpeg" width="75%" alt="Piezas 2d">
+  <p><i>Antes de comenzar a diseñar las piezas en Solidworks, realizamos distintos bocetos a mano para poder visualizar mejor las medidas y como iba a quedar la figura.</i></p>
+</div>   
+
+
+Después, comenzamos a diseñar las piezas utilizando las medidas que obtuvimos en la libreta. Comenzando por el cuerpo para de ahi partir con las medidas de las demás piezas. 
 
 <div style="display: flex; align-items: center; gap: 20px;">
   <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/aleron.jpeg" width="75%" alt="Piezas 2d">
