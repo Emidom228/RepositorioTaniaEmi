@@ -11,7 +11,7 @@ En esta práctica buscamos modelar e imprimir una pieza de nuestra agrado que tu
 
 1. Comence diseñando la mariposa a mano, porque se me hace más fácil entender lo que voy a realizar si ya tengo un boceto a mano que me sirva como referencia.
 2. Después, empece a diseñar las piezas en solidworks, primero el cuerpo y luego las alas
-3. Utilicé una imagen de referecnia en el fonde de Solidworks, para poder tener un disño interno de la ala más certero.
+3. Utilicé una imagen de referecnia en el fondo de Solidworks, para poder tener un disño interno de la ala más certero.
 4. Ensamblé las piezas, dejando espacio para permitir la movilidad de las alas.
 5. Descargue el archivo en .stl
 6. Pusé a imprimir mi pieza
@@ -38,3 +38,7 @@ En esta práctica buscamos modelar e imprimir una pieza de nuestra agrado que tu
     <p>Muestra del movimiento de alas</p>
   </div>
 </div>
+
+![Video de impresión](../../img/impresion_mrps.mp4)
+
+![Archivo](../../img/mariposa.zip)
