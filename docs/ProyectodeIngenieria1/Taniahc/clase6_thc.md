@@ -1,7 +1,7 @@
 # Impresión 3d
 > 2 de Octubre
 
-## Cebolla
+## **Cebolla**
 
 ## **Práctica (mariposa)**
 
@@ -38,5 +38,3 @@ En esta práctica buscamos modelar e imprimir una pieza de nuestra agrado que tu
     <p>Muestra del movimiento de alas</p>
   </div>
 </div>
-
-![Video impresion](../../img/impresion_mrps.mp4)

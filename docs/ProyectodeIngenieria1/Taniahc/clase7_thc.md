@@ -117,4 +117,3 @@ Al finalizar, tenemos que limpiar el área que utilizamos.
   </div>
 </div>
 
-![Video del corte](../../img/corte.mp4)
