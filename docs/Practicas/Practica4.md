@@ -84,3 +84,7 @@ Registramos 5 puntos:
 
 
 En general, esta práctica nos ayudó a entender cómo pasar de una señal "cruda" de un sensor a un valor que sí tiene sentido, como grados o centímetros, y a calcular qué tanto se equivoca cada medición. Para mejorar, se podría sacar el promedio de varias lecturas para que haya menos ruido y probar el sensor con más distancias.
+
+---
+Tania Hernández Cruz
+Jesús Emiliano Hernández Domínguez 
