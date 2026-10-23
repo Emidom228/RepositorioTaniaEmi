@@ -118,6 +118,7 @@ Al finalizar, tenemos que limpiar el área que utilizamos.
 </div>
 
 
-![Video del corte](../../img/corte.mp4)
 
-![Archivos de corte](../../img/Estrella.zip)
+[Ver video del corte](../../img/corte.mp4)
+
+[Descargar archivos de corte](../../img/Estrella.zip)

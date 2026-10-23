@@ -1,8 +1,6 @@
 # Impresión 3d
 > 2 de Octubre
 
-## **Cebolla**
-
 ## **Práctica (mariposa)**
 
 En esta práctica buscamos modelar e imprimir una pieza de nuestra agrado que tuviera movimiente; con la condición de que todo debia salir en la misma impresión, sin uniones.
@@ -39,6 +37,6 @@ En esta práctica buscamos modelar e imprimir una pieza de nuestra agrado que tu
   </div>
 </div>
 
-![Video de impresión](../../img/impresion_mrps.mp4)
+[Ver video de impresión](../../img/impresion_mrps.mp4)
 
-![Archivo](../../img/mariposa.zip)
+[Descargar archivo de la mariposa](../../img/mariposa.zip)
