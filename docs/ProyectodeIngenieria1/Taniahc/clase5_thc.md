@@ -24,18 +24,19 @@ Para utilizarlo se recomienda:
 ## Fresadora 
 
 <div style="display: flex; align-items: center; gap: 20px;">
-  <div>
-  <b>Datos:</b>
-  <ul>
-    <li>La manija de lado avanza en el eje X.</li>
-    <li>La manija de enfrente avanza en el eje Y.</li>
-    <li>La broca debe entrar menos del 50% en el material.</li>
-    <li>El corte se realiza en el sentido de las manecillas del reloj.</li>
-  </ul>
+  <div style="width: 55%;">
+    <b>Datos:</b>
+    <ul>
+      <li>La manija de lado avanza en el eje X.</li>
+      <li>La manija de enfrente avanza en el eje Y.</li>
+      <li>La broca debe entrar menos del 50% en el material.</li>
+      <li>El corte se realiza en el sentido de las manecillas del reloj.</li>
+    </ul>
+  </div>
+  <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/fresadora.jpeg"
+       style="width: 40%; height: auto;"
+       alt="Fresadora">
 </div>
-  <p><i> 
-  <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/fresadora.jpeg" width="40%" alt="Fresadora"> </i></p>
-</div>  
 
 
 <div style="display: flex; align-items: center; gap: 20px;">
@@ -54,16 +55,31 @@ Para utilizarlo se recomienda:
 ## Sierra cinta
 
 <div style="display: flex; align-items: center; gap: 20px;">
-  <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/sierracinta.JPG" width="40%" alt="pasos">
+  <div style="width: 55%;">
+    <b>Pasos para utilizarla:</b>
+    <ul>
+      <li>Colocar el material y sujetarlo con ambas manos.</li>
+      <li>En el lado izquierdo se ajusta la posición.</li>
+      <li>Sirve para cortas placas o cosas muy delgaditas.</li>
+      <li>Hacer perfiles</li>
+    </ul>
+  </div>
+  <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/sierracinta.JPG"
+       style="width: 40%; height: auto;"
+       alt="Fresadora">
+</div>
+
+
+## Corta láminas
+*La máquina corta en diagonal*
+
+<div style="display: flex; align-items: center; gap: 20px;">
+  <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/cortalamina.JPG" width="40%" alt="pasos">
   <p><i><div>
   <i>Pasos para utilizarla:</i>
   <ol>
-    <li>Colocar el material y sujetarlo con ambas manos. </li>
-    <li>En el lado izquierdo se ajusta la posición.  </li>
-    <li>Sirve para cortas placas o cosas muy delgaditas. </li>
-    <li>Hacer perfiles</li>
+    <li>Coloca la lamina en la maquina, procurando que quede debajo de los dientes.  </li>
+    <li>Se pisa el pedal , ejerciendo fuerza. </li>
   </ol>
 </div>  </i></p>
 </div>  
-
-## Corta láminas
