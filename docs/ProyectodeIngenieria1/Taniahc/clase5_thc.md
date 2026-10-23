@@ -24,34 +24,46 @@ Para utilizarlo se recomienda:
 ## Fresadora 
 
 <div style="display: flex; align-items: center; gap: 20px;">
-  Datos:
-  La manija de a lado avanza en el eje x  
-  La manija de enfrente avanza en el eje y   
-  Tiene que entrar menos del 50% de la broca en el material  
-  Se corta en el sentido de  las manecillas del reloj  
+  <div>
+  <b>Datos:</b>
+  <ul>
+    <li>La manija de lado avanza en el eje X.</li>
+    <li>La manija de enfrente avanza en el eje Y.</li>
+    <li>La broca debe entrar menos del 50% en el material.</li>
+    <li>El corte se realiza en el sentido de las manecillas del reloj.</li>
+  </ul>
+</div>
   <p><i> 
-  <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/fresadora.jpeg" width="50%" alt="Fresadora"> </i></p>
+  <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/fresadora.jpeg" width="40%" alt="Fresadora"> </i></p>
 </div>  
 
 
 <div style="display: flex; align-items: center; gap: 20px;">
   <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/pasos.jpeg" width="40%" alt="pasos">
-  <p><i> Pasos para utilizarla:    
-  1. Se enciende con el boton rojo, giramos la perilla.  
-  2. Desactivamos el paro de emergencia.   
-  3. Seleccionamos el modo de uso.  
-  4. Se mueven las manecillas para seleccionar las revoluciones x min con las que queremos cortar.  </i></p>
+  <p><i><div>
+  <i>Pasos para utilizarla:</i>
+  <ol>
+    <li>Se enciende con el botón rojo y se gira la perilla según las indicaciones del instructor.</li>
+    <li>Se libera el paro de emergencia siguiendo el procedimiento indicado.</li>
+    <li>Se selecciona el modo de uso.</li>
+    <li>Se ajustan las revoluciones por minuto (rpm) necesarias para el corte.</li>
+  </ol>
+</div>  </i></p>
 </div>  
 
 ## Sierra cinta
 
 <div style="display: flex; align-items: center; gap: 20px;">
-  <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/sierracinta.jpeg" width="40%" alt="pasos">
-  <p><i> Pasos para utilizarla:  
-  Datos:
-  - Colocar el material y sujetarlo con ambas manos.  
-  - En el lado izquierdo se ajusta la posición.   
-  - Sirve para cortas placas o cosas muy delgaditas.  
-  - Hacer perfiles
-    </i></p>
+  <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/sierracinta.JPG" width="40%" alt="pasos">
+  <p><i><div>
+  <i>Pasos para utilizarla:</i>
+  <ol>
+    <li>Colocar el material y sujetarlo con ambas manos. </li>
+    <li>En el lado izquierdo se ajusta la posición.  </li>
+    <li>Sirve para cortas placas o cosas muy delgaditas. </li>
+    <li>Hacer perfiles</li>
+  </ol>
+</div>  </i></p>
 </div>  
+
+## Corta láminas
