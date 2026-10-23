@@ -7,31 +7,31 @@
 ---
 
 ## 1. Introducción de la Clase
-En esta sesión nos enfocamos en el aprendizaje y manejo de diversas herramientas e instrumentos de medición e instrumentación del taller. Analizamos los principios de funcionamiento de equipos de manufactura y metrología, finalizando con una práctica comparativa de medición de precisión.
+En esta sesión le echamos un ojo al uso de varias herramientas e instrumentos de medición y equipos chidos del taller. Vimos cómo operan las máquinas de manufactura y los aparatos de metrología, y cerramos con una práctica para comparar la precisión entre instrumentos.
 
 ---
 
 ## 2. Instrumentos y Herramientas del Taller
 
 ### Instrumentos de Medición de Precisión
-- **Vernier (Digital y Mecánico):** Es un instrumento de medición directa que permite obtener dimensiones exteriores, interiores y de profundidad con alta precisión (habitualmente en fracciones de milímetro o milésimas de pulgada). El vernier mecánico requiere la lectura del nonio, mientras que el digital facilita una lectura rápida mediante pantalla LCD.
-- **Micrómetro:** Es un instrumento de medición cuantitativa de alta sensibilidad basado en un tornillo micrométrico. Permite medir espesores o diámetros pequeños con un grado de precisión superior al del vernier (de hasta milésimas de milímetro o micras).
+- **Vernier (Digital y Mecánico):** El instrumento clásico para medir exteriores, interiores y profundidades con buen nivel de detalle. El mecánico te pide leer el nonio, mientras que el digital te avienta el número directo en la pantallita LCD.
+- **Micrómetro:** Sirve para medir espesores o diámetros muy pequeños con una precisión todavía mayor que la del vernier (llega a medir hasta micras).
 
 ### Equipos y Maquinaria del Taller
-- **Broca y Fresa:** La broca se utiliza en taladros para realizar perforaciones cilíndricas mediante un movimiento de avance axial. La fresa es una herramienta de corte rotativa empleada en fresadoras para desgastar, ranurar o dar forma al material en múltiples ejes.
-- **Fresadora:** Máquina herramienta utilizada para mecanizar piezas mediante el arranque de viruta con una fresa giratoria.
-- **Sierra Cinta:** Maquina de corte que utiliza una banda metálica dentada y continua para realizar cortes precisos y fluidos en bloques o perfiles metálicos.
-- **Corta Láminas (Cizalla):** Herramienta diseñada para realizar cortes limpios y rectos en láminas metálicas de bajo espesor mediante presión o palanca.
-- **Soldadora por Puntos:** Máquina de soldadura por resistencia que une dos láminas metálicas superpuestas aplicando presión y haciendo pasar una corriente eléctrica de alta intensidad en un punto focalizado.
-- **Dobladora de Láminas:** Equipo mecánico diseñado para deformar plásticamente láminas de metal mediante un ángulo de doblez controlado.
+- **Broca y Fresa:** La broca hace hoyos cilíndricos bajando en el taladro, y la fresa es la que gira en la fresadora para desgastar, ranurar o darle forma al metal.
+- **Fresadora:** La máquina encargada de maquinar piezas arrancando viruta con una fresa giratoria.
+- **Sierra Cinta:** Usa una banda metálica con dientes continua para cortar perfiles o bloques de metal sin tanto rollo.
+- **Corta Láminas (Cizalla):** Para hacer cortes rectos y limpios en láminas delgadas usando palanca o presión.
+- **Soldadora por Puntos:** Junta dos láminas metálicas superpuestas aplicándoles presión y un toque de corriente eléctrica intensa justo en el punto que necesitas.
+- **Dobladora de Láminas:** Equipo mecánico para doblar la lámina al ángulo exacto que te pidan de forma controlada.
 
 ---
 
 ## 3. Práctica de Medición Comparativa
-En la parte práctica, el profesor Oliver nos asignó la tarea de tomar las mediciones de longitud, alto y ancho de 5 cubos. Realizamos cada medición en dos etapas utilizando distintos instrumentos para analizar su precisión y tolerancia:
+Para la parte práctica, el profe Oliver nos puso a medir el largo, alto y ancho de 5 cubos. Hicimos la chamba en dos partes para comparar qué tan cabrona era la diferencia:
 
-1. **Primera medición:** Registro de las dimensiones de los 5 cubos con el vernier.
-2. **Segunda medición:** Registro de las mismas cotas utilizando el micrómetro (o nanómetro) para comparar las variaciones entre instrumentos.
+1. **Primera medición:** Tomamos las dimensiones de los 5 cubos usando el vernier.
+2. **Segunda medición:** Volvimos a medir las mismas cotas pero usando el micrómetro para ver la variación real entre los aparatos.
 
 ---
 
@@ -50,5 +50,5 @@ En la parte práctica, el profesor Oliver nos asignó la tarea de tomar las medi
 ---
 
 ## 5. Conclusiones y Aprendizajes
-- **Comparativa de precisión:** Comprobamos que el micrómetro ofrece una resolución significativamente mayor que el vernier, siendo idóneo para tolerancias estrechas donde variaciones mínimas afectan el ensamble.
-- **Criterio de selección de instrumental:** Aprendimos a elegir la herramienta de medición e instrumentación adecuada según el tipo de proceso y la precisión requerida en el taller.
+- **El nivel de precisión importa:** Comprobamos que el micrómetro es mucho más exacto que el vernier, ideal para cuando andas trabajando con tolerancias bien cerradas donde cualquier milésima te arruina el ensamble.
+- **Elegir la herramienta correcta:** Aprendimos a identificar cuál instrumento de medición usar según el nivel de precisión que te pida el proyecto en el taller.

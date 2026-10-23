@@ -7,42 +7,42 @@
 ---
 
 ## 1. Introducción de la Clase
-En esta sesión conocimos el funcionamiento de la **Máquina CNC** (Control Numérico Computarizado), un equipo automatizado que trabaja sobre 3 ejes espaciales ($X, Y, Z$) para realizar cortes y desbastes con alta precisión. Como medida obligatoria para ingresar al área de maquinado y garantizar nuestra integridad, utilizamos el equipo de protección personal adecuado: overol, lentes de seguridad y botas con casquillo.
+En esta sesión conocimos cómo jala la **Máquina CNC** (Control Numérico Computarizado), un equipo automatizado que trabaja con 3 ejes ($X, Y, Z$) para hacer cortes y desbastes con un buen nivel de detalle. Antes de entrar al área de maquinado, nos pusimos el equipo de protección de cajón: overol, lentes de seguridad y botas con casquillo.
 
 ---
 
 ## 2. Comandos y Fundamentos de Código G
-El Código G es el lenguaje de programación estándar que interpreta la máquina CNC para controlar sus movimientos y operaciones. Durante la clase revisamos los comandos principales:
+El Código G es el lenguaje que entiende la máquina CNC para saber qué movimientos hacer. Aquí están los comandos principales que revisamos:
 
 | Comando / Variable | Descripción |
 | :--- | :--- |
-| **G0** | Movimiento rápido, sin mecanizar (posicionamiento). |
-| **G1** | Movimiento lineal controlado (para corte o avance de trabajo). |
+| **G0** | Movimiento rápido, sin mecanizar (para acomodarse). |
+| **G1** | Movimiento lineal controlado (para cortar o avanzar chambeando). |
 | **G2** | Arco en sentido horario. |
 | **G3** | Arco en sentido antihorario. |
 | **G17** | Selecciona el plano de trabajo XY. |
-| **G21** | Configura el sistema para trabajar en milímetros. |
-| **G20** | Configura el sistema para trabajar en pulgadas. |
-| **G90** | Programación en coordenadas absolutas. |
-| **G91** | Programación en coordenadas incrementales. |
-| **G53** | Cero máquina (coordenadas de referencia del fabricante). |
+| **G21** | Trabajar en milímetros. |
+| **G20** | Trabajar en pulgadas. |
+| **G90** | Coordenadas absolutas. |
+| **G91** | Coordenadas incrementales. |
+| **G53** | Cero máquina (referencia de fábrica). |
 | **G54** | Cero de pieza / sistema de coordenadas de trabajo. |
-| **X, Y, Z** | Posición de los ejes de desplazamiento. |
-| **F** | Velocidad de avance (*Feed rate*). |
-| **S** | Velocidad del husillo (*Spindle speed*). |
+| **X, Y, Z** | Posición de los ejes. |
+| **F** | Velocidad de avance. |
+| **S** | Velocidad del husillo. |
 | **M3** | Encender husillo en sentido horario. |
 | **M4** | Encender husillo en sentido antihorario. |
-| **M5** | Apagar husillo. |
+| **M5** | Apagar el husillo. |
 | **M30** | Finalizar programa y reiniciar. |
 
 ---
 
 ## 3. Práctica de Maquinado: La Galletita de Shrek
-Para la parte práctica de esta sesión, formamos nuevas parejas de trabajo. En mi caso, hice equipo con mi compañero **Emmanuel**. El reto consistía en seleccionar un archivo digital para esculpirlo físicamente utilizando la máquina CNC. 
+Para la parte práctica hice equipo con mi compañero **Emmanuel**. El reto era elegir un archivo digital para esculpirlo físicamente con la CNC. 
 
-1. **Selección del diseño:** Buscamos un modelo que fuera representativo y divertido de fabricar. Optamos por esculpir la clásica **galletita de jengibre (de Shrek)**.
-2. **Preparación del código y simulación:** Verificamos que los parámetros de velocidad, profundidad y selección de cero de pieza (G54) estuvieran correctos para evitar errores en el material.
-3. **Ejecución en la máquina:** Sujetamos firmemente el material a la cama de la CNC, encendimos los sistemas de seguridad y dejamos que la máquina realizara el esculpido capa por capa mediante los movimientos controlados por código G.
+1. **Elegir el diseño:** Buscamos algo divertido y representativo, así que optamos por esculpir la clásica **galletita de jengibre (de Shrek)**.
+2. **Checar el código:** Revisamos que las velocidades, la profundidad y el cero de pieza (G54) estuvieran bien puestos para no regarla con el material.
+3. **Poner a jalar la máquina:** Agarramos y aseguramos bien el material a la cama de la CNC, activamos los seguros y dejamos que la máquina hiciera lo suyo esculpiendo capa por capa con el código G.
 
 ---
 
@@ -56,5 +56,5 @@ Para la parte práctica de esta sesión, formamos nuevas parejas de trabajo. En 
 ---
 
 ## 5. Conclusiones y Aprendizajes
-- **Comprensión de la automatización:** Entender la estructura del Código G nos permitió visualizar cómo las instrucciones de software se traducen en movimientos mecánicos precisos en los tres ejes.
-- **Importancia de la calibración:** Aprendimos que definir correctamente el cero de pieza ($G54$) y las velocidades de avance ($F$) y husillo ($S$) es fundamental para obtener un acabado limpio sin dañar la herramienta de corte ni el material.
+- **Entender la automatización:** Ver cómo funciona el Código G está chido porque entiendes cómo puras líneas de texto se convierten en movimientos mecánicos reales en los tres ejes.
+- **Calibrar bien es clave:** Aprendimos que poner bien el cero de pieza ($G54$) y ajustar las velocidades ($F$ y $S$) es fundamental para que la pieza salga limpia y no se dañe nada.

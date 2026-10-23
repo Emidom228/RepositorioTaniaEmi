@@ -7,26 +7,26 @@
 ---
 
 ## 1. Introducción de la Clase
-En esta sesión nos enfocamos en el modelado y la fabricación de piezas mediante impresión 3D articulada, con el objetivo de lograr un diseño que se imprimiera de un solo tirón (Print-in-Place) y que tuviera movilidad inmediatamente al salir de la cama de impresión, sin necesidad de ensamblar partes posteriormente.
+En esta sesión le entramos al modelado y diseño de piezas articuladas para impresión 3D, buscando que salieran de un solo jalón (*Print-in-Place*) y que tuvieran movilidad al instante en que salieran de la cama de impresión, sin andar ensamblando partes después.
 
 ---
 
 ## 2. Conceptos Clave y Trazado de Geometría
-Antes de iniciar con el proyecto individual, el profesor nos enseñó a modelar una cebolla para practicar el manejo de tolerancias y la generación de capas concéntricas.
+Antes de tirarnos de lleno con el proyecto individual, el profe nos enseñó a modelar una cebolla para practicar el rollo de las tolerancias y las capas concéntricas.
 
 ### Herramienta Principal: Equidistanciar Entidades (Offset)
-- **¿Qué es y para qué sirve?** La herramienta **Equidistanciar** (o *Offset*) en SolidWorks permite crear un nuevo trazo a una distancia constante de una geometría o croquis seleccionado.
-- **Utilidad en la práctica:** Resulta sumamente útil para este tipo de diseños, ya que permite definir holguras y tolerancias exactas entre las articulaciones, evitando que el plástico fundido se solape y termine soldando las piezas móviles durante la impresión.
+- **¿Qué es y para qué sirve?** La herramienta **Equidistanciar** (o *Offset*) en SolidWorks te deja armar un nuevo trazo a una distancia fija de la geometría que selecciones.
+- **Utilidad en la práctica:** Es clave para este tipo de diseños porque te deja calcular las holguras y tolerancias exactas entre las articulaciones, evitando que el plástico fundido se corra y termine soldando las piezas que deben moverse.
 
 ---
 
 ## 3. Proceso de Diseño y Fabricación
-Para el desarrollo individual de la pieza articulada, opté por diseñar un **escorpión**. El procedimiento para llevarlo a cabo fue el siguiente:
+Para el trabajo individual de la pieza articulada, decidí modelar un **escorpión**. Así estuvo el proceso:
 
-1. **Bocetado a mano:** Dibujé el escorpión en mi libreta para estructurar el número de segmentos del cuerpo, la cola y las tenazas.
-2. **Conteo de piezas y articulaciones:** Definí la cantidad de eslabones necesarios para garantizar una movilidad fluida.
-3. **Modelado y Ensamble en SolidWorks:** Diseñé los eslabones utilizando la herramienta de equidistancia para dejar las tolerancias de movimiento necesarias y verifiqué la estructura dentro del software.
-4. **Impresión 3D:** Una vez exportado el archivo, lo mandamos a imprimir en las impresoras 3D del salón del profesor Oliver.
+1. **Boceto a mano:** Me puse a dibujar el escorpión en la libreta para calcular los segmentos del cuerpo, la cola y las tenazas.
+2. **Conteo de piezas:** Definí cuántos eslabones necesitaba para que se moviera chido y fluido.
+3. **Modelado en SolidWorks:** Diseñé los eslabones usando la herramienta de equidistancia para dejarles el juego necesario y revisé que todo embonara bien en el software.
+4. **Impresión 3D:** Ya con el archivo listo, lo mandamos a imprimir en las impresoras 3D del salón del profe Oliver.
 
 ---
 
@@ -43,5 +43,5 @@ Para el desarrollo individual de la pieza articulada, opté por diseñar un **es
 ---
 
 ## 5. Conclusiones y Aprendizajes
-- **Dominio de tolerancias:** Comprendí cómo el uso correcto de la herramienta equidistanciar permite diseñar mecanismos móviles que funcionan desde el momento en que se retiran de la impresora.
-- **Optimización de manufactura:** La técnica de impresión en una sola pieza reduce el tiempo de postprocesamiento y elimina la necesidad de pegamentos o pernos de unión.
+- **Dominar las tolerancias:** Comprendí que usar bien la herramienta de equidistanciar te salva la vida para hacer mecanismos que jalan desde el momento en que los quitas de la impresora.
+- **Ahorrar tiempo:** Hacer todo en una sola pieza te quita un montón de postprocesamiento y te ahorra andar metiendo pegamento o pernos de unión.
