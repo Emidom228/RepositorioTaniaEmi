@@ -20,7 +20,7 @@ El proceso de diseño y fabricación de nuestro dragón constó de los siguiente
 
    | Referencia 1 | Referencia 2 |
    | :---: | :---: |
-   | ![Referencia 1](../../img/referencia1.jpeg) | ![Referencia 2](../../img/referencia2.jpeg) |
+   | ![Referencia1](../../img/Referencia%201.png) | ![Referencia2](../../img/Referencia%202.png) |
 
 2. **Bocetado del diseño:** Después, realizamos bocetos en una libreta para definir el diseño de Chimuelo con la mayor claridad posible. Estos dibujos sirvieron como referencia para el modelado, considerando las vistas frontal, lateral y superior.
 
@@ -60,3 +60,4 @@ El proceso de diseño y fabricación de nuestro dragón constó de los siguiente
 En esta práctica aplicamos los conocimientos adquiridos durante las sesiones anteriores, integrando el diseño en SolidWorks, la preparación de archivos para corte láser y el ensamblaje de piezas. Además, aprendimos la importancia de considerar el *kerf* para obtener un ajuste adecuado entre los componentes.
 
 La actividad fue muy divertida y emocionante, ya que nos permitió transformar un diseño digital en un objeto físico. Finalmente, nos llevamos como lección evitando dejar todo para el último momento.
+[Archivos chimuelo](../../img/chimuelo.zip)
