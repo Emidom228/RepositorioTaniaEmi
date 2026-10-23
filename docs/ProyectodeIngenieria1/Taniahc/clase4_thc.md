@@ -26,6 +26,7 @@ Se diseñaron en total: 9 piezas
 
 
 Después, comenzamos a diseñar las piezas utilizando las medidas que anotamos en la libreta. Empezamos por el cuerpo, ya que se utilizo como referencia para las demás piezas.  
+  
 Durante el proceso, analizamos cuáles de los joints que aprendimos en clase podiamos implementar en nuestro ensamble; decidimos utilizar *finger joints(box joints)* para unir las alas,  *press fit* para unir el alerón, patas frontales, y *wedge joint* para la viga que atravisa el cuerpo, esta nos permitio mantener el cuerpo y las patas en su posición sin moverse.
 
 

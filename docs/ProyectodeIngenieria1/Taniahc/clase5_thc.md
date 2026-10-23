@@ -24,20 +24,34 @@ Para utilizarlo se recomienda:
 ## Fresadora 
 
 <div style="display: flex; align-items: center; gap: 20px;">
-  La manija de a lado avanza en el eje x
-  La manija de enfrente avanza en el eje y 
+  Datos:
+  La manija de a lado avanza en el eje x  
+  La manija de enfrente avanza en el eje y   
+  Tiene que entrar menos del 50% de la broca en el material  
+  Se corta en el sentido de  las manecillas del reloj  
   <p><i> 
-  <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/fresadora.jpeg" width="75%" alt="Ensamble"> </i></p>
+  <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/fresadora.jpeg" width="50%" alt="Fresadora"> </i></p>
 </div>  
 
 
 <div style="display: flex; align-items: center; gap: 20px;">
-  <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/pasos.jpeg" width="75%" alt="Ensamble">
-  <p><i> Pasos para utilizarla: 
-  1. Se enciende con el boton rojo, giramos la perilla.
-  2. Desactivamos el paro de emergencia. 
-  3. Seleccionamos el modo de uso.
+  <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/pasos.jpeg" width="40%" alt="pasos">
+  <p><i> Pasos para utilizarla:    
+  1. Se enciende con el boton rojo, giramos la perilla.  
+  2. Desactivamos el paro de emergencia.   
+  3. Seleccionamos el modo de uso.  
   4. Se mueven las manecillas para seleccionar las revoluciones x min con las que queremos cortar.  </i></p>
 </div>  
 
+## Sierra cinta
 
+<div style="display: flex; align-items: center; gap: 20px;">
+  <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/sierracinta.jpeg" width="40%" alt="pasos">
+  <p><i> Pasos para utilizarla:  
+  Datos:
+  - Colocar el material y sujetarlo con ambas manos.  
+  - En el lado izquierdo se ajusta la posición.   
+  - Sirve para cortas placas o cosas muy delgaditas.  
+  - Hacer perfiles
+    </i></p>
+</div>  
