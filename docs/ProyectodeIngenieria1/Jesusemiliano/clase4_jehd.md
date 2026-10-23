@@ -59,4 +59,4 @@ El proceso de diseño y fabricación de nuestro dragón constó de los siguiente
 
 En esta práctica aplicamos los conocimientos adquiridos durante las sesiones anteriores, integrando el diseño en SolidWorks, la preparación de archivos para corte láser y el ensamblaje de piezas. Además, aprendimos la importancia de considerar el *kerf* para obtener un ajuste adecuado entre los componentes.
 
-La actividad fue muy divertida y emocionante, ya que nos permitió transformar un diseño digital en un objeto físico. Finalmente, comprendimos la importancia de planificar y organizar nuestro tiempo, evitando dejar todo para el último momento.
+La actividad fue muy divertida y emocionante, ya que nos permitió transformar un diseño digital en un objeto físico. Finalmente, nos llevamos como lección evitar dejar todo para el último momento.
