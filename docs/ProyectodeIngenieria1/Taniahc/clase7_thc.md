@@ -1,5 +1,5 @@
 # Máquina CNC
-> 2 de Octubre
+> 9 de Octubre
 
 
 - Se trabaja en 3 dimensiones  
