@@ -55,12 +55,12 @@ Aprendimos a utilizar la máquina CNC Asia Robotic en la clase, para posteriorme
 
 
 <div style="display: flex; align-items: center; gap: 20px;">
-  <img src="https://emidom228.github.io/RepositorioTaniaEmi/3.jpeg" width="40%" alt="pasos">
+  <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/3.jpeg" width="40%" alt="pasos">
   <p><i><div>
-  <ol>
+  <ul>
     <li>Ponemos el material sobre la mesa</li>
     <li>Definimos el origen por medio del control</li>
-  </ol>
+  </ul>
 </div>  </i></p>
 </div>  
 
@@ -80,9 +80,9 @@ Aprendimos a utilizar la máquina CNC Asia Robotic en la clase, para posteriorme
 <div style="display: flex; align-items: center; gap: 20px;">
   <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/5.jpeg" width="40%" alt="pasos">
   <p><i><div>
-  <ol>
-    <li>Ajustamos la fresa </li>
-  </ol>
+  <ul>
+    <li>Ajustamos la broca </li>
+  </ul>
 </div>  </i></p>
 </div>  
 
@@ -93,12 +93,15 @@ Estas son las piezas por las que esta compuesto el Spindle
 ## **Práctica**
 
 Nuestra práctica consistio en realizar un corte en unicel rosa, escogimos una estrella.  
+
 Primero, diseñamos nuestra pieza en *VCarvePro*, donde decidimos que partes serían perfilados (Corte completo) o pocket (grabado).  
 Al momento de ir a cortar nuestra pieza, se encontraba ocupada la Asia Robotic, por lo que, utilizamos la máquina roja.   
+
 Ambas funcionan de manera muy similar salvo con unas excepciones como:
+
 - No tiene clamps, se puede martillar o utilizar cinta doble cara en el material.  
-- No hay control, se sustituye con un programa llamado *"Asima"* controlado por una computadora.
-- Se guarda en un formato diferente (*match*)
+- No hay control, se sustituye con un programa llamado *"Asima"* controlado por una computadora.  
+- Se guarda en un formato diferente (*match*)  
 
 Al estar en Asima, abrimos nuestro archivo, verificamos que estuviera bien el origen y se realizo el corte.
 Al finalizar, tenemos que limpiar el área que utilizamos.
@@ -114,4 +117,4 @@ Al finalizar, tenemos que limpiar el área que utilizamos.
   </div>
 </div>
 
-![Video del corte](../../img/corte.mov)
+![Video del corte](../../img/corte.mp4)

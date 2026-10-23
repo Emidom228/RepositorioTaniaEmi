@@ -23,7 +23,7 @@ En esta práctica buscamos modelar e imprimir una pieza de nuestra agrado que tu
     <p>Boceto a mano con las medias de la mariposa</p>
   </div>
   <div style="flex: 1; text-align: center;">
-    <img src="https://emidom228.github.io/RepositorioTaniaEmi/3d_mariposa.jpeg" alt="Descripción 2" width="100%">
+    <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/3d_mariposa.jpeg" alt="Descripción 2" width="100%">
     <p>Ensamble final</p>
   </div>
 </div>

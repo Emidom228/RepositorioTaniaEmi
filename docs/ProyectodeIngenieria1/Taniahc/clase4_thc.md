@@ -74,8 +74,6 @@ Este proyecto me permitio aprender el proceso del diseño y fabricación por med
 
 
 
-**Archivos**    
-
 
 [Archivos chimuelo](../../img/chimuelo.zip)
 
