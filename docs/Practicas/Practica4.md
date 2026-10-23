@@ -15,23 +15,23 @@ Leer y escalar la señal de un potenciómetro (porcentaje y ángulo) y medir dis
 - LED
 - Resistencias
 
-## **ESP32 - Potenciometro**
+## **ESP32 - Potenciómetro**
 
-### *Simulación*  
+### *Simulación*
 <div style="display: flex; align-items: center; gap: 20px;">
   <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/esp32.png" width="75%" alt="Simulación del ESP32">
   <p><i>La simulación se realizó en Wokwi, con el potenciómetro conectado al pin 34 del ESP32. Sirvió para obtener los datos de la tabla.</i></p>
-</div>  
+</div>
 
 ### *Montaje en protoboard*
 <div style="display: flex; align-items: center; gap: 20px;">
   <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/potenciometro.jpeg" width="75%" alt="Montaje potenciómetro">
   <p><i>Montaje físico del mismo circuito en protoboard.</i></p>
-</div>   
+</div>
 
-**Procedimiento:** Se conectó el potenciómetro al pin 34 del ESP32 y se leyó con el ADC (0 a 4095). El código convierte la lectura en porcentaje y ángulo, considerando un giro de 270°. Utilizamos la simmulación de Wowki para verificar lo sporcentajes y ángulos  
-Registramos 5 puntos:  
-  
+**Procedimiento:** Se conectó el potenciómetro al pin 34 del ESP32 y se leyó con el ADC (0 a 4095). El código convierte la lectura en porcentaje y ángulo, considerando un giro de 270°. Utilizamos la simulación de Wokwi para verificar los porcentajes y ángulos.  
+Registramos 5 puntos:
+
 ### *Tabla*
 
 | Punto | Ángulo de referencia | Lectura ADC | Ángulo calculado | Error |
@@ -44,41 +44,43 @@ Registramos 5 puntos:
 
 ### *Código utilizado*
 <div style="display: flex; align-items: center; gap: 20px;">
-  <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/cod.png" width="75%" alt="código potenciometro">
+  <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/cod.png" width="75%" alt="código potenciómetro">
   <p><i>Código utilizado tanto en la simulación como en el ESP32 físico conectado a la computadora.</i></p>
-</div>   
+</div>
 
-## **ESP32 - Sensor ultrasónico**  
+## **ESP32 - Sensor ultrasónico**
+
 ### *Simulación*
 <div style="display: flex; align-items: center; gap: 20px;">
   <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/ultrasonico.png" width="75%" alt="Simulación ultrasónico">
   <p><i>Simulación en Wokwi del sensor HC-SR04 y el LED conectados al ESP32. Con el código se obtuvieron los valores de la tabla.</i></p>
-</div>   
+</div>
 
 ### *Montaje en Protoboard*
-<img src="https://emidom228.github.io/RepositorioTaniaEmi/img/montaje.jpeg" width="75%" alt="Simulación ultrasónico">
-  <p><i>Simulación en Wokwi del sensor HC-SR04 y el LED conectados al ESP32. Con el código se obtuvieron los valores de la tabla.</i></p>
-</div>   
+<div style="display: flex; align-items: center; gap: 20px;">
+  <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/montaje.jpeg" width="75%" alt="Montaje ultrasónico">
+  <p><i>Montaje físico del sensor HC-SR04 y el LED conectados al ESP32 en protoboard.</i></p>
+</div>
 
-**Procedimiento:** Se conectó el sensor ultrasónico con TRIG al pin 5, ECHO al pin 18 y un LED al pin 23 del ESP32.
-El sensor mide el tiempo (eco en µs)  que tarda el sonido en ir y regresar, y la distancia se calcula como eco × 0.0343/2. Finalmente el LED se enciende únicamente cuando la distancia es menor a 30cm.  
+**Procedimiento:** Se conectó el sensor ultrasónico con TRIG al pin 5, ECHO al pin 18 y un LED al pin 23 del ESP32. El sensor mide el tiempo (eco en µs) que tarda el sonido en ir y regresar, y la distancia se calcula como eco × 0.0343/2. Finalmente el LED se enciende únicamente cuando la distancia es menor a 30 cm.
 
 ### *Tabla*
 
-| Punto | Distancia de referencia (cm) | Eco (µs) | Distancia calculada(cm) | Error (cm) | LED |
+| Punto | Distancia de referencia (cm) | Eco (µs) | Distancia calculada (cm) | Error (cm) | LED |
 | --- | --- | --- | --- | --- | --- |
 | Mínimo | 10 | 583 | 10 | 0 | Encendido |
-| 25% | 18 | 1056 | 18.11 | 0.11 | Encendido | 
+| 25% | 18 | 1056 | 18.11 | 0.11 | Encendido |
 | 50% | 26 | 1531 | 26.26 | 0.26 | Encendido |
 | 75% | 34 | 1999 | 34.28 | 0.28 | Apagado |
 | Máximo | 42 | 2467 | 42.31 | 0.31 | Apagado |
 
 ### *Código*
 <div style="display: flex; align-items: center; gap: 20px;">
-  <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/cod_sensor.png" width="75%" alt="codigo ultrásonico">
+  <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/cod_sensor.png" width="75%" alt="código ultrasónico">
   <p><i>Código utilizado en la simulación y montaje físico del sensor ultrasónico.</i></p>
-</div>   
+</div>
 
 ### *Conclusión*
 
 
+En general, esta práctica nos ayudó a entender cómo pasar de una señal "cruda" de un sensor a un valor que sí tiene sentido, como grados o centímetros, y a calcular qué tanto se equivoca cada medición. Para mejorar, se podría sacar el promedio de varias lecturas para que haya menos ruido y probar el sensor con más distancias.
