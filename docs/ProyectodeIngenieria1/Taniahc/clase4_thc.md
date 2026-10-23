@@ -25,7 +25,7 @@ Se diseñaron en total: 9 piezas
 </div>
 
 
-Después, comenzamos a diseñar las piezas utilizando las medidas que anotamos en la libreta. Empezamos por el cuerpo, ya que se utilizo como referencia para las demás piezas.
+Después, comenzamos a diseñar las piezas utilizando las medidas que anotamos en la libreta. Empezamos por el cuerpo, ya que se utilizo como referencia para las demás piezas.  
 Durante el proceso, analizamos cuáles de los joints que aprendimos en clase podiamos implementar en nuestro ensamble; decidimos utilizar *finger joints(box joints)* para unir las alas,  *press fit* para unir el alerón, patas frontales, y *wedge joint* para la viga que atravisa el cuerpo, esta nos permitio mantener el cuerpo y las patas en su posición sin moverse.
 
 
@@ -44,11 +44,11 @@ Una vez que terminamos de diseñar las piezas, realizamos un ensamble para visua
   <p><i> Asi se visualizo nuestro ensamble.</i></p>
 </div>  
 
-Depués de haber realizado el ensamble, acomodamos las piezas en el dibujo que se envia a la cortadora láser. 
+Depués de haber realizado el ensamble, acomodamos las piezas en el dibujo que se envia a la cortadora láser.  
 Las distribuimos de manera que ocuparan la menor cantidad de material posible, aprovechando el espacio del MDF y reduciendo el depserdicio.
 
 ## **Corte láser**
-Cargamos el archivo en el programa de la cortadora láser, en este, configuramos los parámetros (potencia y velocidad) y definimos que líneas se iban a cortar y cuales grabar.
+Cargamos el archivo en el programa de la cortadora láser, en este, configuramos los parámetros (potencia y velocidad) y definimos que líneas se iban a cortar y cuales grabar.  
 
 <div style="display: flex; gap: 10px;">
   <div style="flex: 1; text-align: center;">
@@ -62,7 +62,8 @@ Cargamos el archivo en el programa de la cortadora láser, en este, configuramos
 </div>
 
 ## **Ensamble final**  
-Durante el primer corte láser, no consideramos el *kerf*, es decir, el material que se pierde debido al ancho del corte realizado por la máquina. Esto provocó que las piezas no encajaran correctamente. Por esta razón, realizamos nuevamente el corte, esta vez considerando el *kerf* en el diseño. Después de hacer esta corrección, las piezas encajaron correctamente y pudimos continuar con el ensamble sin problemas.
+Durante el primer corte láser, no consideramos el *kerf*, es decir, el material que se pierde debido al ancho del corte realizado por la máquina. Esto provocó que las piezas no encajaran correctamente.  
+Por esta razón, realizamos nuevamente el corte, esta vez considerando el *kerf* en el diseño. Después de hacer esta corrección, las piezas encajaron correctamente y pudimos continuar con el ensamble sin problemas.
 
 ![Chimuelo final](../../img/final.jpeg)
 
@@ -72,8 +73,10 @@ Este proyecto me permitio aprender el proceso del diseño y fabricación por med
 
 
 
-**Archivos**
-[Archivosdesolidworks](../../img/chimuelo.zip)
+**Archivos**    
+
+
+[Archivos chimuelo](../../img/chimuelo.zip)
 
 
 
