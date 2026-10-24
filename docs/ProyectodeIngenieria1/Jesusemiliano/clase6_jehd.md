@@ -45,7 +45,7 @@ Para la parte práctica, el profe Oliver nos puso a medir el largo, alto y ancho
 ### Mediciones de Cubos y Equipos del Taller
 | Medición de Cubos | Herramientas del Taller |
 | :---: | :---: |
-| ![Medicion Cubos](../../img/Medicion_Cubos.jpeg) | ![Maquinaria Taller](../../img/Maquinaria_Taller.jpeg) |
+| ![Medicion Cubos](../../img/Medicion_Cubos.jpeg)  ![medicion](../../img/medir.jpeg) | ![Maquinaria Taller](../../img/Maquinaria_Taller.jpeg) |
 
 ---
 
