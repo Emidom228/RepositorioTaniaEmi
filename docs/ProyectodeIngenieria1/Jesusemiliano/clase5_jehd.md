@@ -36,9 +36,9 @@ Para el trabajo individual de la pieza articulada, decidí modelar un **escorpi�
 ![Boceto Escorpión](../../img/Boceto_Escorpion.jpeg)
 
 ### Modelado 3D e Impresión
-| Ensamble en SolidWorks | Impresión 3D del Escorpión |
-| :---: | :---: |
-| ![Ensamble Escorpión](../../img/Ensamble_Escorpion.jpeg) | ![Escorpión Impreso](../../img/Escorpión_Impreso.jpeg) |
+| Impresión 3D del Escorpión |
+| :---: |
+| ![Escorpión Impreso](../../img/Escorpión_Impreso.jpeg) |
 
 ---
 
