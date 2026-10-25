@@ -1,11 +1,9 @@
----
-Titulo: "Robot Móvil Diferencial con ESP32"
-Fecha: 2026-10-15
-Equipo:: "Andrea Paola Carmona Casiano, Hernández Cruz Tania, Hernández Domínguez Jesús Emiliano, Francisco Javier Pérez Hernández"
-Estado: completa   # borrador | completa
----
 
 # Robot Móvil Diferencial con ESP32
+**Titulo:** Robot Móvil Diferencial con ESP32
+**Fecha:** 2026-10-15
+**Equipo:** Andrea Paola Carmona Casiano, Hernández Cruz Tania, Hernández Domínguez Jesús Emiliano, Francisco Javier Pérez Hernández
+**Estado:** completa
 
 > *Octubre 2 de 2026*  
 
