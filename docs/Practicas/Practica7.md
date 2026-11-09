@@ -150,5 +150,5 @@ En la parte A se demuestra que el peso y el tipo de piso si afectan el desempeñ
 En la parte B, se comprobo que cada parte del PID cumple una función diferente: *P* da rápides, *D* amortigua osicilaciones e *I* elimina el error permanente. Sintonizarlo requiere un equilibrio entre rápidez, estabilidad y precisión.
 
 --- 
-Tania Hernández Cruz 
+Tania Hernández Cruz  
 Jesús Emiliano Hernández Dóminguez
