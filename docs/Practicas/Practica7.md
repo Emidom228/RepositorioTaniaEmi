@@ -102,7 +102,8 @@ Distancia recorrida en 3s , según el peso y la carga.
 | 2 | 8.50 | 0 | 2.70 | 15 | No se establece en la banda | 0.11 | Sobrepasa un poco de 1, pero casi no oscila se estabilizo en 0.89 |
 | 3 | 8.50 | 3.00 | 2.70 | 20 | 3 | 0 | La gráfica sube rapido pasandose un poco de 1, baja y luego llega a 1 sin oscilar, eliminando el error permanente |
 
-**Parámetros finales**  
+**Parámetros finales** 
+
 - ***Kp = 8.5 ->*** Se seleccionó porque la curva reaccionaba de forma rápida, aunque provocó muchas oscilaciones (sobreimpulso de 62%).  
 - ***Kd = 2.7 ->*** Amortigua las oscilaciones sin hacerla nerviosa (bajo el sobre impulso de 62% a 15%); no corrigió el error permanente, solo las oscilaciones.  
 - ***Ki = 3 ->*** Eliminó el error permanente, aunque el sobreimpulso pasó de 15% a 20%.  
@@ -118,7 +119,7 @@ Distancia recorrida en 3s , según el peso y la carga.
   </div>
 </div>
  
-![Gráfica 3](../img/graf_3.png){width=70%} <br> Gráfica: intento 3 </br>
+![Gráfica 3](../img/graf_3.png){width=50%} <br> Gráfica: intento 3 </br>
 
 ## Extra: **Encontrar valores**
 Ajuste de la demo con sobreimpulso menor a 5 % y tiempo de establecimiento menor a 5 s.
@@ -131,12 +132,21 @@ Ajuste de la demo con sobreimpulso menor a 5 % y tiempo de establecimiento menor
 | 2 | 4.00 | 1.70 | 3.00 | 4 | 5 (límite) | 0 | Se cumple el sobreimpulso pero seguiamos en el limite del tiempo de establecimiento |
 | 3 | 3.5 | 2.00 | 3.00 | 3 | 4.6 | 0 | Se redujo más el sobreimpulso y el tiempo de establecimiento, logrando el objetivo |
 
-![intento1](../img/intento1.png)  
-![intento2](../img/intento2.png)  
-![intento3](../img/intento3.png)  
+<div style="display: flex; gap: 10px;">
+  <div style="flex: 1; text-align: center;">
+    <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/intento1.png" alt="intento 1" width="100%">
+    <p>Intento 1</p>
+  </div>
+  <div style="flex: 1; text-align: center;">
+    <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/intento2.png" alt="intento 2" width="100%">
+    <p>Intento 2</p>
+  </div>
+</div>
+
+![intento3](../img/intento3.png){width=50%} <br> Intento 3 </br> 
 
 ## Conclusión
-En la parte A se demuestra que el peso y el tipo de piso si afectan el desempeño del carro: con el mismo PWM y el tiempo recorrido; además al ser un lazo abierto no se pueden corregir las perturbaciones.
+En la parte A se demuestra que el peso y el tipo de piso si afectan el desempeño del carro: con el mismo PWM y el tiempo recorrido; además al ser un lazo abierto no se pueden corregir las perturbaciones.  
 En la parte B, se comprobo que cada parte del PID cumple una función diferente: *P* da rápides, *D* amortigua osicilaciones e *I* elimina el error permanente. Sintonizarlo requiere un equilibrio entre rápidez, estabilidad y precisión.
 
 --- 
