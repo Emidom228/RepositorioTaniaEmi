@@ -8,9 +8,10 @@
 - Peso extra de 312.8 g. (1x)
 
 ## Parte A: **Lazo Abierto con el carro**
+
 > Los archivos utilizados en la parte A de la práctica son iguales al equipo de Andrea y Fran, ya que se realizo en conjunto. (unicamente en la parte A).
 
-**Código**
+**Código**  
 Generamos un código con ayuda de IA, para que, el carro avanzara de forma recta durante 3seg con PWM fijo y se detuviera déspues del tiempo determinado.
 
 ```c
@@ -72,7 +73,7 @@ void loop() {
 }
 ```
 
-**Peso utilizado**
+**Peso utilizado**  
 ![Peso](../img/peso.jpg){ width=70% } <br>
 Con ayuda de un muñeco, logramos alcanzar en peso requerido para las pruebas: 312.8g <br>
 
@@ -82,7 +83,7 @@ Con ayuda de un muñeco, logramos alcanzar en peso requerido para las pruebas: 3
 [Piso 2 sin peso](../img/2_xpeso.MP4)  
 [Piso 2 con peso](../img/2_peso.mp4)  
 
-**Resultados**
+**Resultados**  
 Distancia recorrida en 3s , según el peso y la carga.  
 
 | Condición | Intento | Distancia recorrida (cm) | Observaciones |
@@ -95,21 +96,29 @@ Distancia recorrida en 3s , según el peso y la carga.
 
 ## Parte B: **Lazo cerrado con la demo**
 
-
 | Intento | kp | ki | kd | Sobreimpulso (%) | Tiempo de establecimineto (s) | Error permanente | Observación |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | 8.50 | 0 | 0 | 62 | No se establece en la banda |0.11 | Sube rápido y pasa el valor de 1, luego oscila y se estabiliza en 0.89 | 
 | 2 | 8.50 | 0 | 2.70 | 15 | No se establece en la banda | 0.11 | Sobrepasa un poco de 1, pero casi no oscila se estabilizo en 0.89 |
 | 3 | 8.50 | 3.00 | 2.70 | 20 | 3 | 0 | La gráfica sube rapido pasandose un poco de 1, baja y luego llega a 1 sin oscilar, eliminando el error permanente |
 
-**Parámetros finales**
+**Parámetros finales**  
 - ***Kp = 8.5 ->*** Se seleccionó porque la curva reaccionaba de forma rápida, aunque provocó muchas oscilaciones (sobreimpulso de 62%).  
 - ***Kd = 2.7 ->*** Amortigua las oscilaciones sin hacerla nerviosa (bajo el sobre impulso de 62% a 15%); no corrigió el error permanente, solo las oscilaciones.  
 - ***Ki = 3 ->*** Eliminó el error permanente, aunque el sobreimpulso pasó de 15% a 20%.  
 
-![Gráfica 1](../img/graf_1.png)  
-![Gráfica 2](../img/graf_2.png)  
-![Gráfica 3](../img/graf_3.png)  
+<div style="display: flex; gap: 10px;">
+  <div style="flex: 1; text-align: center;">
+    <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/graf_1.png" alt="grafica 1" width="100%">
+    <p>Gráfica: intento 1</p>
+  </div>
+  <div style="flex: 1; text-align: center;">
+    <img src="https://emidom228.github.io/RepositorioTaniaEmi/img/graf_2.png" alt="grafica 2" width="100%">
+    <p>Gráfica: intento 2</p>
+  </div>
+</div>
+ 
+![Gráfica 3](../img/graf_3.png){width=70%} <br> Gráfica: intento 3 </br>
 
 ## Extra: **Encontrar valores**
 Ajuste de la demo con sobreimpulso menor a 5 % y tiempo de establecimiento menor a 5 s.
